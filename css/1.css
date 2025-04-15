@@ -1,0 +1,170 @@
+.nav-logo{
+    width: 200px;
+}
+
+
+
+/* billboard */
+#billboard .text-content {
+  /* Remove absolute positioning */
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  top: auto;
+  color: black !important;
+}
+
+
+#billboard .text-content .display-1 {
+  font-size: calc(2.5rem + 6vw);
+}
+
+#billboard figure figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #billboard .text-content {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  #billboard figure figcaption {
+    position: relative;
+  }
+}
+
+.preloader {
+  z-index: 1000;
+  background-color: var(--primary-700);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  inset: 0%;
+}
+
+
+
+
+.preloader-logo {
+  width: 300px;
+  max-width: 100%;
+  display: block;
+}
+.logo{
+  width: 300px !important;
+  max-width: 100%;
+  display: block;
+}
+
+.nav-bar-div{
+  position: fixed !important;
+  background-color: white !important;
+  z-index: 10001;
+}
+
+/* Footer Base Styling */
+#footer {
+  background-color: #000; /* Pure black */
+  color: #f1f1f1;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#footer .container {
+   padding: 0 !important;
+}
+#footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+#footer .widget-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#footer ul.menu-list li {
+  margin-bottom: 8px;
+}
+
+#footer p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+/* Contact info */
+#footer ul.list-unstyled li {
+  margin-bottom: 6px;
+  color: #dcdcdc;
+  font-size: 0.95rem;
+}
+
+/* Social Icons */
+#footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#footer .social-links a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#footer .social-links svg {
+  fill: currentColor;
+}
+
+/* Bottom Border Section */
+#footer .border-top {
+  border-top: 1px solid #333;
+}
+
+#footer .border-top p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+#footer .border-top a {
+  color: #ccc;
+}
+
+#footer .border-top a:hover {
+  color: #fff;
+}
+
+/* Responsive Fixes */
+@media (max-width: 767px) {
+  #footer .text-md-end {
+    text-align: start !important;
+  }
+
+  #footer .mb-4 {
+    text-align: center;
+  }
+
+  #footer .social-links {
+    justify-content: center !important;
+  }
+
+  #footer .border-top {
+    text-align: center;
+  }
+}
