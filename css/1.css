@@ -3,39 +3,144 @@
 }
 
 
-
-/* billboard */
+/* General billboard styling */
+#billboard {
+  /* min-height: 90vh !important; */
+  margin-top: 70px; /* adjust if your navbar is fixed */
+  display: flex;
+  align-items: center;
+}
 #billboard .text-content {
-  /* Remove absolute positioning */
   position: relative;
   z-index: 2;
   width: 100%;
-  top: auto;
   color: black !important;
+  margin-top: 20px; /* reduced spacing */
 }
 
-
 #billboard .text-content .display-1 {
-  font-size: calc(2.5rem + 6vw);
+  font-size: calc(2.5rem + 5vw); /* slightly smaller */
+  line-height: 1.1;
+}
+
+#billboard .btn {
+  padding: 0.75rem 2rem; /* less padding */
+  font-size: 1rem;
+}
+
+#billboard figure {
+  margin: 0;
+  padding: 0;
+}
+
+#billboard figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 #billboard figure figcaption {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 1rem;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
 }
 
-@media screen and (max-width: 767px) {
+/* Tablet view (768px - 991px) */
+@media screen and (max-width: 991px) {
   #billboard .text-content {
-    position: relative;
     margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
+    text-align: center;
   }
 
   #billboard figure figcaption {
     position: relative;
+    padding: 1rem 1.25rem;
+    margin: 20px auto 0 auto;
+    max-width: 90%;
   }
+
+  #billboard .text-content .display-1 {
+    font-size: calc(2rem + 2vw);
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #billboard .text-content {
+    text-align: left !important;
+  }
+
+  #billboard .text-content .display-1 {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile view (up to 767px) */
+@media screen and (max-width: 767px) {
+  #billboard {
+    margin-top: 30px;
+  }
+
+  #billboard .text-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #billboard .text-content .display-1 {
+    font-size: 2.5rem;
+  }
+
+  #billboard .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  #billboard figure figcaption {
+    position: relative;
+    padding: 1rem;
+    margin: 15px auto 0 auto;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #billboard {
+    margin-top: 70px; 
+  }
+
+  #billboard .text-content {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  #billboard .text-content .display-1 {
+    font-size: 2.4rem; /* slightly larger text for mobile */
+    line-height: 1.2;
+  }
+
+  #billboard .btn {
+    padding: 7px 12px !important; /* smaller button */
+    font-size: 0.9rem;
+  }
+
+  #billboard figure figcaption {
+    position: relative;
+    margin: 15px auto 0 auto;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+.billboard-sec{
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
 }
 
 .preloader {
@@ -64,6 +169,7 @@
 
 .nav-bar-div{
   position: fixed !important;
+  top: 0;
   background-color: white !important;
   z-index: 10001;
 }
@@ -150,6 +256,11 @@
   color: #fff;
 }
 
+
+.footer-div{
+  width: 82%;
+  margin: auto;
+}
 /* Responsive Fixes */
 @media (max-width: 767px) {
   #footer .text-md-end {
@@ -166,5 +277,133 @@
 
   #footer .border-top {
     text-align: center;
+  }
+}
+
+
+.about .display-1{
+  font-size: 60px;
+}
+
+.service .display-1{
+  font-size: 60px;
+}
+
+.specialist .display-1{
+  font-size: 60px;
+}
+
+.header-div{
+  height: 500px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.service-about{
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 1300px) {
+  .personal-info h2.display-1 {
+    font-size: 3rem;
+  }
+
+  .personal-info .btn {
+    padding: 12px 40px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .personal-info h2.display-1 {
+    font-size: 2.5rem;
+  }
+
+  .personal-info .btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+
+  .personal-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .personal-info .row {
+    flex-direction: column;
+  }
+
+  .personal-info .col-md-7,
+  .personal-info .col-md-5 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .personal-info figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .personal-info .m-md-5,
+  .personal-info .p-md-5 {
+    margin: 1rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .personal-info h2.display-1 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+
+  .personal-info p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .personal-info .btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .personal-info h2.display-1 {
+    font-size: 1.9rem;
+  }
+
+  .personal-info p {
+    font-size: 0.9rem;
+  }
+
+  .personal-info .btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .personal-info h2.display-1 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .personal-info p {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+
+  .personal-info .btn {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    margin-left: 0;
   }
 }

@@ -1,0 +1,197 @@
+/* about */
+.about_head img{
+    position: absolute;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    margin-top: -70px;
+    width: 40%;
+    margin-left: 50%;
+    height: auto;
+    
+}
+.about img{
+    border: 1px solid gray;
+    border-radius: 10% 10% 10% 10%;
+}
+.about_content .about_img img{
+    width: 50px;
+    height: auto;
+}
+
+
+/* awards */
+
+.Awards{
+    margin-top: 1rem;
+    background-color: #B8DA80;
+    padding: 2rem;
+    justify-content: space-between;
+    background-image: url(/images/buble.png);
+    width: 100%;
+}
+.Awards h1{
+    text-align: center;
+}
+.Award_row{
+    width: 100%;
+    justify-items: center;
+}
+.award_col{
+   margin: 1px;
+    display:flex;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+    overflow: hidden;
+}
+.award_col img{
+    width: 130%;
+    margin-left: -2rem;
+    height: auto;
+    object-fit: cover;
+    background-size: cover;
+    filter: brightness(50%);
+    transition: transform 0.4s ;
+    border: 2px solid rgb(3, 3, 3);
+}
+.award_col p{
+    margin-top: 20px;
+    opacity: 0;
+}
+.info{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #41404079;
+    transition: all 0.3s;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+.award_col:hover img{
+   transform: scale(1.5);
+}
+.award_col:hover .info{
+    left: 50%;
+    width: 50%;
+    top: 30px;
+    height: 60px;
+    color: black;
+}
+.award_col:hover p{
+    animation: fadeup 0.1s forwards;
+}
+@keyframes fadeup{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (min-width: 319px) and (max-width:424px){
+
+    .Award_row {
+        margin-left: 4px;
+        width: 100%;
+        justify-items: center;
+    }
+    
+}
+@media (min-width: 424px) and (max-width:768px){
+    .Award_row{
+        margin-left: 5px
+    }
+
+}
+@media (min-width: 767px) and (max-width:1200px){
+
+  
+}
+
+/*** FAQ'S Start ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.quick h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic 0;
+}
+.quick video{
+    margin-left: 1rem;
+}
+
+.wrapper{
+    max-width: 85%;
+    margin: auto;
+}
+
+.wrapper >h2 {
+    margin: 1.5rem 0;
+    text-align: center;
+    
+}
+.wrapper >h2{
+    letter-spacing: 3px;
+}
+
+.accordion{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+.active,
+.accordion:hover{
+    background-color: #f1f7f5;
+}
+.pannel{
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+.pannel p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.faq{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+.faq.active{
+    border: none;
+}
+
+
+/*** FAQ'S End ***/
+
