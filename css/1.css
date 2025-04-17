@@ -2,6 +2,34 @@
     width: 200px;
 }
 
+.btn-book-now {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn-book-now:hover {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+.toggle-mode-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-mode-btn:hover {
+  color: #888;
+}
+
 
 /* General billboard styling */
 #billboard {

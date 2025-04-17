@@ -75,7 +75,13 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn  d-none d-lg-block">Book Now</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="btn btn-book-now d-none d-lg-block">Book Now</a>
+                    <button class="btn toggle-mode-btn d-none d-lg-block" id="modeToggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
             </div>
         </nav>
     </div>
@@ -766,6 +772,25 @@
        crossorigin="anonymous"></script>
    <script type="text/javascript" src="js/plugins.js"></script>
    <script type="text/javascript" src="js/script.js"></script>
+
+   <script>
+    const modeToggle = document.getElementById("modeToggle");
+    const body = document.body;
+  
+    modeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+  
+      const icon = modeToggle.querySelector("i");
+      if (body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      }
+    });
+  </script>
+  
 </body>
 
 </html>
