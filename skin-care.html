@@ -26,6 +26,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/1.css" rel="stylesheet">
+    <link href="css/service.css" rel="stylesheet">
     <!-- <link href="css/nitro-agency.webflow.css" rel="stylesheet">
     <link href="css/webflow.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet"> -->
@@ -107,6 +108,109 @@
 
 
 
+
+ <!-- Service Start -->
+ <div class="container-fluid px-0 py-5 my-5 ">
+	<div class="row mx-0 justify-content-center text-center">
+		<div class="col-lg-6">
+			<h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Our Service</h6>
+			<h1>Spa & Beauty Services</h1>
+		</div>
+	</div>
+	<div class="owl-carousel service-carousel">
+		<div class="service-item position-relative">
+			<img class="img-fluid" src="img/service-1.jpg" alt="">
+			<div class="service-text text-center">
+				<h4 class="text-white font-weight-medium px-3">Body Massage</h4>
+				<p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+				<div class="w-100 bg-white text-center p-4" >
+					<a class="btn btn-primary" href="">Make Order</a>
+				</div>
+			</div>
+		</div>
+		<div class="service-item position-relative">
+			<img class="img-fluid" src="img/service-2.jpg" alt="">
+			<div class="service-text text-center">
+				<h4 class="text-white font-weight-medium px-3">Stone Therapy</h4>
+				<p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+				<div class="w-100 bg-white text-center p-4" >
+					<a class="btn btn-primary" href="">Make Order</a>
+				</div>
+			</div>
+		</div>
+		<div class="service-item position-relative">
+			<img class="img-fluid" src="img/service-3.jpg" alt="">
+			<div class="service-text text-center">
+				<h4 class="text-white font-weight-medium px-3">Facial Therapy</h4>
+				<p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+				<div class="w-100 bg-white text-center p-4" >
+					<a class="btn btn-primary" href="">Make Order</a>
+				</div>
+			</div>
+		</div>
+		<div class="service-item position-relative">
+			<img class="img-fluid" src="img/service-4.jpg" alt="">
+			<div class="service-text text-center">
+				<h4 class="text-white font-weight-medium px-3">Skin Care</h4>
+				<p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+				<div class="w-100 bg-white text-center p-4" >
+					<a class="btn btn-primary" href="">Make Order</a>
+				</div>
+			</div>
+		</div>
+		<div class="service-item position-relative">
+			<img class="img-fluid" src="img/service-5.jpg" alt="">
+			<div class="service-text text-center">
+				<h4 class="text-white font-weight-medium px-3">Stream Bath</h4>
+				<p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+				<div class="w-100 bg-white text-center p-4" >
+					<a class="btn btn-primary" href="">Make Order</a>
+				</div>
+			</div>
+		</div>
+		<div class="service-item position-relative">
+			<img class="img-fluid" src="img/service-6.jpg" alt="">
+			<div class="service-text text-center">
+				<h4 class="text-white font-weight-medium px-3">Face Masking</h4>
+				<p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+				<div class="w-100 bg-white text-center p-4" >
+					<a class="btn btn-primary" href="">Make Order</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!-- Service End -->
+
+
+<div class="toggle-buttons">
+	<button class="toggle-btn active" data-gender="her">For Her</button>
+	<button class="toggle-btn" data-gender="him">For Him</button>
+  </div>
+ <!-- Section 1 -->
+ <div class="toggle-section">
+	<div class="toggle-content her active">
+	  <div class="text-content">
+		  <h1>Pamper Your Hair and Scalp</h1>
+		  <p>Experience the ultimate relaxation while nourishing your hair with our luxurious hair spa treatments. Designed to restore hydration and shine, our spa services leave your hair healthy and rejuvenated.</p>
+		</div>
+		<div class="image-content">
+		  <img src="img/hair/10009.jpg" alt="Hair Styling at Radiance Salon">
+		</div>
+	  </div>
+	<div class="toggle-content him">
+		<div class="text-content">
+			<h1>Straightening / Smoothening</h1>
+			<p>De-frizzing & smoothing treatment for curly or wavy hair to make it more manageable. *Same price for any Boy style length, thickness and condition of hair</p>
+		  </div>
+		  <div class="image-content">
+			<img src="img/hair/10006.jpg" alt="Men's Haircut at Radiance Salon">
+		  </div>
+		</div>
+  </div>
+
+   <!-- Section 1 -->
 
 
     <footer id="footer" class="bg-black pt-5" data-bs-theme="dark">
@@ -298,6 +402,33 @@
       }
     });
   </script>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+   const toggleButtons = document.querySelectorAll('.toggle-btn');
+ 
+   toggleButtons.forEach(button => {
+	 button.addEventListener('click', () => {
+	   const selected = button.getAttribute('data-gender');
+ 
+	   // Toggle button active class
+	   toggleButtons.forEach(btn => btn.classList.remove('active'));
+	   button.classList.add('active');
+ 
+	   // Update all toggle sections
+	   const allSections = document.querySelectorAll('.toggle-section');
+	   allSections.forEach(section => {
+		 section.querySelectorAll('.toggle-content').forEach(content => {
+		   content.classList.remove('active');
+		 });
+		 const toShow = section.querySelector(`.toggle-content.${selected}`);
+		 if (toShow) toShow.classList.add('active');
+	   });
+	 });
+   });
+ });
+ 
+   </script>
   
 </body>
 
