@@ -1,0 +1,49 @@
+
+body{
+    background-image: url(/images/patternpad-2025-04-24-14-30-18.png);
+}
+
+.causel img{
+    width: 100%;
+}
+.content{
+    margin-top: 2rem;
+    text-align: center;
+}
+.content p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.box_content{
+    margin-top: 3rem;
+    text-align: start;
+    border: 1px solid gray;
+    padding: 20px;
+    box-shadow: 10px 10px black;
+    border-left: none;
+    border-top: none;
+    background-color: rgb(250, 244, 218);
+    height: 300px;
+    
+}
+.box_content p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+@media (min-width: 320px) and (max-width:425px){
+    .content h1{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .box_content{
+        height: 400px;
+    }
+    .box_content p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

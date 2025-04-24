@@ -204,7 +204,7 @@
 
 /* Footer Base Styling */
 #footer {
-  background-color: #33b8a9; /* Pure black */
+  background-color: #b4b4b4; /* Pure black */
   color: #f1f1f1;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -213,7 +213,7 @@
    padding: 0 !important;
 }
 #footer a {
-  color: #000000;
+  color: #ededed;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -250,7 +250,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #1a1a1a;
+  background-color: #cacaca;
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -301,6 +301,10 @@
 
   #footer .social-links {
     justify-content: center !important;
+  }
+
+  #footer{
+    padding: 15px;
   }
 
   #footer .border-top {
