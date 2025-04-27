@@ -1,3 +1,74 @@
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #A8D5BA; /* Base green */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* Logo Style */
+.preloader-logo {
+  max-width: 180px;
+  height: auto;
+  z-index: 2;
+  animation: fadeInLogo 1.5s ease-in-out;
+}
+
+/* Background Animation (Slide Up) */
+.preloader-bg {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background: #A8D5BA;
+  animation: slideUp 2s ease forwards;
+  z-index: 1;
+}
+
+/* Logo fade-in */
+@keyframes fadeInLogo {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Background Slide Up */
+@keyframes slideUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+/* Hide Preloader */
+#preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+/* Hide navbar initially */
+#navbar.hidden {
+  display: none;
+}
+/* Hide navbar initially */
+.nav-bar-div.hidden {
+  display: none;
+}
+/* Hide nav-bar-div immediately */
+.nav-bar-div {
+  display: none;
+}
+
+/* When preloader is done, show navbar */
+.nav-bar-div.show {
+  display: block;
+}
+
+
 .nav-logo{
     width: 200px;
 }
@@ -29,6 +100,636 @@
 .toggle-mode-btn:hover {
   color: #888;
 }
+
+
+
+.radiance-carousel {
+  margin-top: 84px;
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+.radiance-carousel img{
+  filter: brightness(0.4);
+}
+.radiance-slide {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radiance-overlay {
+  position: absolute;
+  text-align: center;
+  z-index: 1000;
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.radiance-overlay h5 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.radiance-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.radiance-overlay h1 em {
+  font-style: italic;
+  color: #4cc05e;
+}
+
+.radiance-overlay p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.radiance-services {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.radiance-service img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.radiance-service h4 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.radiance-service p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.radiance-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.radiance-btn {
+  background-color: #4fd743;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.radiance-call-box {
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  gap: 10px;
+}
+
+.radiance-call-info h4 {
+  margin-bottom: 2px;
+  color: white;
+}
+
+.radiance-call-info p {
+  font-size: 12px;
+  color: #ebebeb;
+}
+
+.radiance-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.radiance-arrow.radiance-left {
+  left: 20px;
+}
+
+.radiance-arrow.radiance-right {
+  right: 20px;
+}
+
+.radiance-bottom-features {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Default already looks good for Desktop */
+/* Let's add responsive for smaller devices */
+
+@media (max-width: 1200px) {
+  .radiance-overlay h1 {
+    font-size: 40px;
+  }
+  .radiance-overlay p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .radiance-carousel {
+    height: 500px;
+  }
+  
+  .radiance-overlay h1 {
+    font-size: 32px;
+  }
+
+  .radiance-overlay p {
+    font-size: 15px;
+  }
+
+  .radiance-service img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .radiance-services {
+    gap: 25px;
+  }
+
+  .radiance-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .radiance-call-box {
+    padding: 8px 16px;
+  }
+
+  .radiance-call-info h4 {
+    font-size: 14px;
+  }
+
+  .radiance-call-info p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .radiance-carousel {
+    height: 450px;
+  }
+
+  .radiance-overlay {
+    padding: 15px;
+  }
+
+  .radiance-overlay h1 {
+    font-size: 26px;
+  }
+
+  .radiance-overlay p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .radiance-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .radiance-service h4 {
+    font-size: 16px;
+  }
+
+  .radiance-bottom-features {
+    flex-wrap: wrap;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .radiance-arrow {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .radiance-carousel {
+    height: 400px;
+  }
+
+  .radiance-overlay h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .radiance-overlay p {
+    font-size: 13px;
+  }
+
+  .radiance-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .radiance-btn, .radiance-call-box {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .radiance-call-box {
+    background-color: #8fcd89;
+    color: black;
+  }
+
+  .radiance-phone-icon {
+    font-size: 18px;
+  }
+}
+
+
+.radiance-bottom-features {
+  overflow: hidden;
+  background-color: #1b1b1b;
+  padding: 15px 0;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.radiance-marquee {
+  display: flex;
+  width: fit-content;
+}
+
+.radiance-marquee-group {
+  display: flex;
+  animation: scrollMarquee 50s linear infinite;
+}
+
+.radiance-marquee-group span {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 18px;
+  color: #c9f5d0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Animation for smooth infinite scrolling */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.radiance-bottom-features:hover .radiance-marquee-group {
+  animation-play-state: paused;
+}
+
+/* Optional: pause on hover */
+.radiance-bottom-features:hover .radiance-marquee {
+  animation-play-state: paused;
+}
+
+
+.hair-salon-bg{
+
+  background: url(/img/Mullet-transparent-bg-01.png) no-repeat;
+  background-color: #ced7cf;
+}
+
+
+.hair-salon-section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hair-header-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hair-small-title {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #7aa67e;
+  margin-bottom: 10px;
+}
+
+.hair-header-text h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.hair-header-text em {
+  font-style: italic;
+  color: #7aa67e;
+  font-weight: bold;
+}
+
+.hair-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.hair-image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hair-text-box h2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #7aa67e;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hair-text-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.hair-text-box p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.hair-text-box ul {
+  margin-bottom: 20px;
+}
+
+.hair-text-box ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.svg-con{
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+.hair-svg{
+ fill: #4cc05e !important;
+ height: 50px;
+ 
+}
+.hair-features {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.hair-features p {
+  /* display: flex;
+  align-items: center;
+  font-size: 16px; */
+  text-align: center;
+}
+
+.hair-btn {
+  display: inline-block;
+  background-color: #306b37;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.hair-btn:hover {
+  background-color: #2b5d31;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+
+/* Tablet devices (768px and smaller) */
+@media (max-width: 768px) {
+  .hair-header-text h1 {
+      font-size: 2rem;
+  }
+
+  .hair-content-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  .hair-text-box h3 {
+      font-size: 20px;
+  }
+
+  .hair-btn {
+      padding: 10px 20px;
+      font-size: 15px;
+  }
+}
+
+/* Mobile devices (480px and smaller) */
+@media (max-width: 480px) {
+  .hair-header-text h1 {
+      font-size: 1.7rem;
+  }
+
+  .hair-small-title {
+      font-size: 10px;
+  }
+
+  .hair-content-grid {
+      gap: 15px;
+  }
+
+  .hair-text-box h2 {
+      font-size: 12px;
+  }
+
+  .hair-text-box h3 {
+      font-size: 18px;
+  }
+
+  .hair-text-box p,
+  .hair-features p,
+  .hair-text-box ul li {
+      font-size: 14px;
+  }
+
+  .hair-btn {
+      padding: 8px 18px;
+      font-size: 14px;
+  }
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.plans-left {
+  width: 60%;
+}
+
+.plans-right {
+  width: 35%;
+}
+
+#plans-image {
+  width: 100%;
+  height: auto;
+}
+
+.plans-item {
+  cursor: pointer;
+}
+
+.plans-item:hover {
+  opacity: 0.7;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+  min-height: 600px;
+}
+
+.plans-left {
+  width: 50%;
+}
+
+.plans-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.plans-left h2 span {
+  font-style: italic;
+  color: #8bdb72;
+}
+
+.plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plans-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plans-item:hover {
+  background: #67ca67;
+  color: white;
+}
+
+.plans-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.plans-item p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.plans-item span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.plans-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans-right img {
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.plans-left {
+  width: 60%;
+}
+
+.plans-right {
+  width: 35%;
+}
+
+#plans-image {
+  width: 100%;
+  height: auto;
+}
+
+.plans-item {
+  cursor: pointer;
+}
+
+.plans-item:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
 
 
 /* General billboard styling */
