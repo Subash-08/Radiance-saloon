@@ -725,6 +725,76 @@
 .plans-item:hover {
   opacity: 0.7;
 }
+/* Basic styling */
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+}
+
+.plans-left {
+  width: 60%; /* Default width for larger screens */
+}
+
+.plans-right {
+  width: 35%; /* Default width for larger screens */
+}
+
+#plans-image {
+  width: 100%; /* Make sure the image takes the full width of its container */
+  height: auto;
+}
+
+.plans-item {
+  cursor: pointer;
+}
+
+.plans-item:hover {
+  opacity: 0.7;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .plans-container {
+      flex-direction: column; /* Stack the plans and the image vertically */
+      align-items: center;
+  }
+
+  .plans-left, .plans-right {
+      width: 90%; /* Make both columns take up most of the width */
+      margin-bottom: 20px; /* Add some space between the left and right sections */
+  }
+
+  #plans-image {
+      max-width: 80%; /* Limit the image width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .plans-left {
+      width: 100%; /* Full width for the plans list on smaller screens */
+  }
+
+  .plans-right {
+      width: 100%; /* Full width for the image on smaller screens */
+      margin-top: 20px; /* Space between the plans and the image */
+  }
+
+  #plans-image {
+      max-width: 100%; /* Full width for the image */
+  }
+}
+
+@media (max-width: 480px) {
+  .plans-item {
+      font-size: 14px; /* Make the text smaller for mobile devices */
+  }
+
+  h2 {
+      font-size: 18px; /* Smaller heading size for mobile */
+  }
+}
 
 
 
