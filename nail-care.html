@@ -47,14 +47,22 @@
 <body>
    
 
+<!-- Preloader Start -->
+<div id="preloader">
+    <div class="preloader-bg"></div>
+    <img src="img/logo.svg" alt="Logo" class="preloader-logo">
+  </div>
+  <!-- Preloader End -->
+  
+  
 
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar-div">
-        <div class="preloader"><img src="images/3434.png" loading="lazy" alt="" class="preloader-logo"></div>
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+       
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-">
             
             <a href="index.html" class="navbar-brand ml-lg-3">
-               <img class="nav-logo" src="img/New folder/3434.png"/>
+               <img class="nav-logo" src="images/Radiance Logo.png"/>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -73,6 +81,7 @@
                         </div>
                     </div>
                     <a href="bridal.html" class="nav-item nav-link">Bridal</a>
+                    <a href="price.html" class="nav-item nav-link">Pricing</a>
                     <a href="franchise.html" class="nav-item nav-link">Franchise</a>
                     <a href="academy.html" class="nav-item nav-link">Academy</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -88,7 +97,6 @@
         </nav>
     </div>
     <!-- Navbar End -->
-
 
 
 
@@ -346,6 +354,18 @@
         icon.classList.remove("fa-sun");
         icon.classList.add("fa-moon");
       }
+    });
+  </script>
+   <script>
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      const navbarDiv = document.querySelector('.nav-bar-div');
+  
+      // After preload animation
+      setTimeout(() => {
+        preloader.classList.add('hide');
+        navbarDiv.classList.add('show'); // show the navbar
+      }, 2000); // match preloader animation time
     });
   </script>
   

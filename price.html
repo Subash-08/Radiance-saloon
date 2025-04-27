@@ -2,303 +2,372 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>SPA Center - Beauty & Spa HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="utf-8">
+  <title>Radiance Saloon</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free HTML Templates" name="keywords">
+  <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/price.css" rel="stylesheet">
+  <link href="css/1.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light d-none d-lg-block">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-primary px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-primary px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-primary px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-primary px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-primary pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
+ 
+<!-- Preloader Start -->
+<div id="preloader">
+    <div class="preloader-bg"></div>
+    <img src="img/logo.svg" alt="Logo" class="preloader-logo">
+  </div>
+  <!-- Preloader End -->
+  
+  
 
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+    <div class="container-fluid p-0 nav-bar-div">
+       
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-">
+            
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-primary"><span class="text-dark">SPA</span> Center</h1>
+               <img class="nav-logo" src="images/Radiance Logo.png"/>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="price.html" class="nav-item nav-link active">Pricing</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="opening.html" class="dropdown-item">Open Hours</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="hair-care.html" class="dropdown-item">Hair Care</a>
+                            <a href="skin-care.html" class="dropdown-item">Skin Care</a>
+                            <a href="nail-care.html" class="dropdown-item">Nail Care</a>
+                            <a href="body-care.html" class="dropdown-item">Body Care</a>
                         </div>
                     </div>
+                    <a href="bridal.html" class="nav-item nav-link">Bridal</a>
+                    <a href="price.html" class="nav-item nav-link">Pricing</a>
+                    <a href="franchise.html" class="nav-item nav-link">Franchise</a>
+                    <a href="academy.html" class="nav-item nav-link">Academy</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary d-none d-lg-block">Book Now</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="btn btn-book-now d-none d-lg-block">Offer</a>
+                    <!-- <button class="btn toggle-mode-btn d-none d-lg-block" id="modeToggle" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button> -->
+                </div>
+                
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
+   
 
-
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid bg-jumbotron" style="margin-bottom: 90px;">
-        <div class="container text-center py-5">
-            <h3 class="text-white display-3 mb-4">Pricing</h3>
-            <div class="d-inline-flex align-items-center text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
-                <i class="far fa-circle px-3"></i>
-                <p class="m-0">Pricing</p>
+<div class="section">
+  <div class="our_price">
+    <div class="row">
+        <div class="col-lg-6 price">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">Our Prices</h1>
+            <div class="tabs" data-aos="zoom-in" data-aos-duration="1500">
+             <div class="tab active" onclick="showContent('hair')">Hair Care</div>
+             <div class="tab" onclick="showContent('skin')">Skin Care</div>
+             <div class="tab" onclick="showContent('body')">Body Care</div>
+           </div>
+         
+           <div class="content" id="content" data-aos="zoom-in" data-aos-duration="2000">
+             Stay silky-smooth with expert waxing and body treatments at Naturals Salon! Enjoy flawless skin with gentle, effective, and long-lasting results.
+             <div class="note" data-aos="zoom-in" data-aos-duration="2500">(price of service may vary between states/Cities)</div>
+           </div>
+         
+           <a href="#" class="button" data-aos="zoom-in" data-aos-duration="3000">Book Now</a>
+        </div>
+        <div class="col-lg-6">
+            <div class="price_img">
+                <img src="images/makeup/109.png" alt="" data-aos="fade-left" data-aos-duration="1000">
             </div>
         </div>
     </div>
-    <!-- Header End -->
+</div>
+</div> 
+<!-- hair -->
 
-
-    <!-- Pricing Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/pricing.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7 pt-5 pb-lg-5">
-                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
-                        <div class="owl-carousel pricing-carousel">
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="section hair_care">
+    <h1 class="Care">Hair Care</h1>
+<div class="service-section">
+    <!-- Left: Image -->
+    <div class="service-image" data-aos="zoom-in" data-aos-duration="1000">
+      <img id="serviceImage" src="images/table_img/h_1.png" alt="Service">
     </div>
-    <!-- Pricing End -->
-
-
-    <!-- Open Hours Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/opening.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
-                        <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
-                        <h1 class="mb-4">Best Relax And Spa Zone</h1>
-                        <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
-                        <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 9:00 AM - 7:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 9:00 AM - 6:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : Closed</li>
-                        </ul>
-                        <a href="" class="btn btn-primary mt-2">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  
+    <!-- Right: Tabs and Content -->
+    <div class="service-content" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="service-tabs">
+        <div class="service-tab active" onclick="switchTab('styling', this)">Hair Styling</div>
+        <div class="service-tab" onclick="switchTab('colour', this)">World of Colour</div>
+        <div class="service-tab" onclick="switchTab('texture', this)">Texture & Hair Treatments</div>
+      </div>
+  
+      <div id="serviceDescription" class="service-description">
+        Get runway-ready with professional Hair Styling! Whether you want curls, sleek straight hair, or intricate updos, our stylists have you covered.
+        <div class="service-note">(Services vary by location)</div>
+      </div>
+  
+      <a href="#" class="service-button">Book Now</a>
     </div>
-    <!-- Open Hours End -->
+  </div>
+</div>
 
 
-    <!-- Footer Start -->
-    <div class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-lg-6 pr-lg-5 mb-5">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="mb-3 text-white"><span class="text-primary">SPA</span> Center</h1>
-                    </a>
-                    <p>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                    <div class="d-flex justify-content-start mt-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 pl-lg-5">
-                    <div class="row">
-                        <div class="col-sm-6 mb-5">
-                            <h5 class="text-white text-uppercase mb-4">Quick Links</h5>
-                            <div class="d-flex flex-column justify-content-start">
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pricing Plan</a>
-                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 mb-5">
-                            <h5 class="text-white text-uppercase mb-4">Our Services</h5>
-                            <div class="d-flex flex-column justify-content-start">
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Body Massage</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Stone Therapy</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Facial Therapy</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Skin Care</a>
-                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Nail Care</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 mb-5">
-                            <h5 class="text-white text-uppercase mb-4">Newsletter</h5>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary px-4">Sign Up</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- skin -->
+
+<div class="section Skin_care">
+    <h1 class="Care">Skin Care</h1>
+  
+    <div class="service-skin_section">
+      <!-- Left: Image -->
+      <div class="service-skin_image" data-aos="zoom-in" data-aos-duration="1000">
+        <img id="serviceskin_Image" src="images/table_img/s_1.png" alt="Service Image">
+      </div>
+  
+      <!-- Right: Tabs and Content -->
+      <div class="service-skin_content" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="service-skins" >
+          <div class="service-skin active" onclick="switchTab('add', this)">Add On's</div>
+          <div class="service-skin" onclick="switchTab('skin', this)">Skin Goals</div>
+          <div class="service-skin" onclick="switchTab('Luxury', this)">Luxury Facials</div>
+          <div class="service-skin" onclick="switchTab('Indulgent', this)">Indulgent Facials</div>
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-light border-top py-4" style="border-color: rgba(256, 256, 256, .15) !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0 text-white">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0 text-white">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
+  
+        <div id="serviceSkin" class="service-skin_text">
+          Enhance your skincare routine with personalized add-ons!
         </div>
+  
+        <a href="#" class="service-skin_button">Book Now</a>
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  
+<!-- body -->
+
+<div class="section bodycare">
+    <div class="service-body_section">
+       <div class="row">
+        <div class="col-lg-6">
+            <div class="serviceBody_Image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="images/table_img/b_2.png" alt="Service Image">
+        </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="service_text" data-aos="fade-right" data-aos-duration="1000">
+                <p>Stay well-groomed with expert waxing and body care services at Naturals Salon! 
+                    From Flavored Cartridge Waxing to Peel-Off Waxing for sensitive areas,<br>
+                    we ensure smooth, clean, and comfortable results. Stay fresh and confident every day!</p>
+            <p>(Certain services are available only in selected salons)</p>
+            <a href="#" class="service_button">Book Now</a>
+        </div>
+       </div>
+    </div>
+  
+    </div>
+     
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+
+
+
+
+
+
+  <script>
+    const content = {
+      hair: `Transform your look with professional haircuts, coloring, and styling at Naturals Salon! Our experts are ready to give you the perfect style.
+      <div class="note">(price of service may vary between states/Cities)</div>`,
+  
+      skin: `Rejuvenate your skin with luxurious facials and treatments at Naturals Salon! Glow with healthy, radiant skin customized to your needs.
+      <div class="note">(price of service may vary between states/Cities)</div>`,
+  
+      body: `Stay silky-smooth with expert waxing and body treatments at Naturals Salon! Enjoy flawless skin with gentle, effective, and long-lasting results.
+      <div class="note">(price of service may vary between states/Cities)</div>`
+    };
+  
+    function showContent(type) {
+      document.getElementById('content').innerHTML = content[type];
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    const serviceData = {
+    styling: {
+      text: `Get runway-ready with professional Hair Styling! Whether you want curls, sleek straight hair, or intricate updos, our stylists have you covered.<div class="service-note">(Services vary by location)</div>`,
+      img: "images/table_img/h_1.png"
+    },
+    colour: {
+      text: `Step into a world of vibrant transformations! Whether it's the sun-kissed elegance of Balayage, the bold contrast of Highlights, or a full Global Hair Colour makeover, our expert colorists create the perfect shade for you!<div class="service-note">(Available only in selected salons)</div>`,
+      img: "images/table_img/h_2.png"
+    },
+    texture: {
+      text: `Revive and protect your hair with our special Texture & Hair Treatments! Choose from Keratin, Smoothening, or deep conditioning to restore your hair’s natural shine.<div class="service-note">(Treatments may vary at select locations)</div>`,
+      img: "images/table_img/h_3.png"
+    }
+  };
+
+  function switchTab(serviceName, element) {
+    // Change content
+    document.getElementById('serviceDescription').innerHTML = serviceData[serviceName].text;
+    // Change image
+    document.getElementById('serviceImage').src = serviceData[serviceName].img;
+
+    // Update active tab
+    document.querySelectorAll('.service-tab').forEach(tab => tab.classList.remove('active'));
+    element.classList.add('active');
+  }
+
+
+  function switchTab(contentType, tabElement) {
+    const serviceSkinContent = document.getElementById('serviceSkin');
+    const serviceSkinImage = document.getElementById('serviceskin_Image');
+
+    let content = '';
+    let imageSrc = 'images/table_img/s_1.png'; // Default fallback
+
+    if (contentType === 'add') {
+      content = `Enhance your skincare routine with personalized add-ons! Hydrate and refresh your skin with luxurious treatments.`;
+      imageSrc = 'images/table_img/s_1.png';
+    } else if (contentType === 'skin') {
+      content = `Achieve your dream skin goals with our tailored facial therapies and skincare solutions.`;
+      imageSrc = 'images/table_img/s_2.png';
+    } else if (contentType === 'Luxury') {
+      content = `Experience the ultimate pampering with our luxury facials featuring high-end products and expert care.`;
+      imageSrc = 'images/table_img/s_3.png';
+    } else if (contentType === 'Indulgent') {
+      content = `Indulge in deep nourishment with facials crafted to relax, revitalize, and restore your skin’s natural glow.`;
+      imageSrc = 'images/table_img/s_4.png';
+    }
+
+    // Update content
+    serviceSkinContent.innerHTML = content;
+
+    // Safe image switching
+    fetch(imageSrc)
+      .then((res) => {
+        if (res.ok) {
+          serviceSkinImage.src = imageSrc;
+        } else {
+          serviceSkinImage.src = 'images/table_img/default.png';
+        }
+      })
+      .catch(() => {
+        serviceSkinImage.src = 'images/table_img/default.png';
+      });
+
+    // Update active tab
+    const tabs = document.querySelectorAll('.service-skins .service-skin');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    tabElement.classList.add('active');
+  }
+
+
+    </script>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/tempusdominus/js/moment.min.js"></script>
+  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      const navbarDiv = document.querySelector('.nav-bar-div');
+  
+      // After preload animation
+      setTimeout(() => {
+        preloader.classList.add('hide');
+        navbarDiv.classList.add('show'); // show the navbar
+      }, 2000); // match preloader animation time
+    });
+  </script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

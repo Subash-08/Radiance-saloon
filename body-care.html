@@ -26,6 +26,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/1.css" rel="stylesheet">
+    <link href="css/service.css" rel="stylesheet">
     <!-- <link href="css/nitro-agency.webflow.css" rel="stylesheet">
     <link href="css/webflow.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet"> -->
@@ -46,14 +47,22 @@
 <body>
    
 
+<!-- Preloader Start -->
+<div id="preloader">
+    <div class="preloader-bg"></div>
+    <img src="img/logo.svg" alt="Logo" class="preloader-logo">
+  </div>
+  <!-- Preloader End -->
+  
+  
 
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar-div">
-        <div class="preloader"><img src="images/3434.png" loading="lazy" alt="" class="preloader-logo"></div>
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+       
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-">
             
             <a href="index.html" class="navbar-brand ml-lg-3">
-               <img class="nav-logo" src="img/New folder/3434.png"/>
+               <img class="nav-logo" src="images/Radiance Logo.png"/>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -72,6 +81,7 @@
                         </div>
                     </div>
                     <a href="bridal.html" class="nav-item nav-link">Bridal</a>
+                    <a href="price.html" class="nav-item nav-link">Pricing</a>
                     <a href="franchise.html" class="nav-item nav-link">Franchise</a>
                     <a href="academy.html" class="nav-item nav-link">Academy</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -87,7 +97,6 @@
         </nav>
     </div>
     <!-- Navbar End -->
-
 
 
 
@@ -180,6 +189,94 @@
 	
 </div>
 <!-- Service End -->
+
+
+
+
+<div class="toggle-buttons">
+	<button class="toggle-btn active" data-gender="her">For Her</button>
+	<button class="toggle-btn" data-gender="him">For Him</button>
+  </div>
+  
+  <!-- Section 1 -->
+  <div class="toggle-section">
+	<div class="toggle-content her active">
+	  <div class="text-content">
+          <h1 class="display-1">Flawless Precision, Redefined</h1>
+          <p>Redefine your beauty with contactless threading at Radiance Salon, the trusted body care destination in salem. Whether you prefer high-arch or softly rounded brows, our experts deliver precision and hygiene for a perfectly defined look. Safe, gentle, and flawless every time.</p>
+        </div>
+        <div class="image-content">
+          <img src="img/hair/10001.png" alt="Hair Styling at Radiance Salon">
+        </div>
+      </div>
+	<div class="toggle-content him">
+		
+	    <div class="text-content">
+			<h1>Under-Eye Treatment</h1>
+			<p>An undereye treatment at a salon can help to reduce the appearance of bags and circles, as well as improve the overall appearance of the skin. The treatment can also help to reduce the appearance of wrinkles and fine lines.</p>
+		  </div>
+		  <div class="image-content">
+			<img src="img/hair/10003.jpg" alt="Men's Haircut at Radiance Salon">
+		  </div>
+		</div>
+  </div>
+ 
+  
+   <!-- Section 1 -->
+	  <!-- Section 1 -->
+	  <div class="toggle-section">
+		<div class="toggle-content her active">
+
+			<div class="image-content">
+				<img src="img/hair/10002.png" alt="Hair Styling at Radiance Salon">
+			  </div>
+		  <div class="text-content">
+			  <h1> Smooth Skin, Perfect Glow</h1>
+			  <p>At Radiance Salon, the trusted body care salon in salem, enjoy premium Body Polishing and Waxing services. From gentle exfoliation to smooth, radiant skin, we use top-quality waxes like honey and flavored options for the perfect pampering experience.</p>
+			</div>
+			
+		  </div>
+		
+		<div class="toggle-content him">
+			<div class="image-content">
+				<img src="img/hair/10008.jpg" alt="Men's Haircut at Radiance Salon">
+			  </div>
+			<div class="text-content">
+				<h1>Manicure Pedicure</h1>
+				<p>  Deviating from the regular method followed for manicures & pedicures, we strive to exceed the cut, file, clean and polish procedure and provide our clients with a variety of massage techniques, and treatments. It can help to relax and relieve you from any stress or tension that you may be feeling.</p>
+			  </div>
+			 
+			</div>
+	  </div>
+	  
+	  
+	  <div class="toggle-section">
+		<div class="toggle-content her active">
+		  <div class="text-content">
+			  <h1 class="display-1">Flawless Nails, Effortless Style</h1>
+			  <p>Discover top-tier manicure services at Radiance Salon, a premier body care salon in salem. With expert care and a variety of colors, we create the perfect look for your nails while providing a relaxing, pampering experience.</p>
+			</div>
+			<div class="image-content">
+			  <img src="img/hair/10001.png" alt="Hair Styling at Radiance Salon">
+			</div>
+		  </div>
+
+		  <div class="toggle-section">
+			<div class="toggle-content her active">
+	
+				<div class="image-content">
+					<img src="img/hair/10002.png" alt="Hair Styling at Radiance Salon">
+				  </div>
+			  <div class="text-content">
+				  <h1>Pamper Your Feet</h1>
+				  <p>Step into bliss with our pedicure services! 
+			  
+					Combining soothing massages, rejuvenation, and impeccable nail care, your feet will feel refreshed and radiant. Experience the luxury and confidence of a perfect pampering session at Salem’s favorite body care salon.</p>
+				</div>
+				
+			  </div>
+			  
+	
 
     <footer id="footer" class="bg-black pt-5" data-bs-theme="dark">
 		<div class="container">
@@ -370,7 +467,44 @@
       }
     });
   </script>
-  
+   <script>
+	document.addEventListener('DOMContentLoaded', () => {
+   const toggleButtons = document.querySelectorAll('.toggle-btn');
+ 
+   toggleButtons.forEach(button => {
+	 button.addEventListener('click', () => {
+	   const selected = button.getAttribute('data-gender');
+ 
+	   // Toggle button active class
+	   toggleButtons.forEach(btn => btn.classList.remove('active'));
+	   button.classList.add('active');
+ 
+	   // Update all toggle sections
+	   const allSections = document.querySelectorAll('.toggle-section');
+	   allSections.forEach(section => {
+		 section.querySelectorAll('.toggle-content').forEach(content => {
+		   content.classList.remove('active');
+		 });
+		 const toShow = section.querySelector(`.toggle-content.${selected}`);
+		 if (toShow) toShow.classList.add('active');
+	   });
+	 });
+   });
+ });
+ 
+   </script>
+    <script>
+		window.addEventListener('load', function() {
+		  const preloader = document.getElementById('preloader');
+		  const navbarDiv = document.querySelector('.nav-bar-div');
+	  
+		  // After preload animation
+		  setTimeout(() => {
+			preloader.classList.add('hide');
+			navbarDiv.classList.add('show'); // show the navbar
+		  }, 2000); // match preloader animation time
+		});
+	  </script>
 </body>
 
 </html>

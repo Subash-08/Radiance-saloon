@@ -70,7 +70,7 @@
 
 
 .nav-logo{
-    width: 200px;
+    width: 180px;
 }
 
 .btn-book-now {
@@ -84,7 +84,7 @@
 }
 
 .btn-book-now:hover {
-  background-color: transparent;
+  background-color:  #A8D5BA;
   color: #000;
   border-color: #000;
 }
@@ -111,7 +111,7 @@
   overflow: hidden;
 }
 
-.radiance-carousel img{
+.radiance-carousel > .radiance-slide > img {
   filter: brightness(0.4);
 }
 .radiance-slide {
@@ -161,7 +161,7 @@
 .radiance-services {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
@@ -484,26 +484,31 @@
   color: #7aa67e;
   margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .hair-text-box h3 {
-  font-size: 22px;
+  font-size: 42px;
   margin-bottom: 15px;
+  font-weight: 800;
 }
 
 .hair-text-box p {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
+  color: black;
 }
 
 .hair-text-box ul {
   margin-bottom: 20px;
+  color: black;
 }
 
 .hair-text-box ul li {
   margin-bottom: 8px;
   list-style-type: disc;
   margin-left: 20px;
+  font-size: 18px;
 }
 .svg-con{
   display: flex;
@@ -512,7 +517,7 @@
 }
 .hair-svg{
  fill: #4cc05e !important;
- height: 50px;
+ height: 80px;
  
 }
 .hair-features {
@@ -975,8 +980,9 @@
 
 /* Footer Base Styling */
 #footer {
-  background-color: #b4b4b4; /* Pure black */
-  color: #f1f1f1;
+  background-color: #e7e7e7; /* Pure black */
+  margin-top: 80px;
+  color: #000000;
   width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -984,7 +990,7 @@
    padding: 0 !important;
 }
 #footer a {
-  color: #ededed;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1006,13 +1012,13 @@
 #footer p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #d1d1d1;
+  color: #000000;
 }
 
 /* Contact info */
 #footer ul.list-unstyled li {
   margin-bottom: 6px;
-  color: #dcdcdc;
+  color: #000000;
   font-size: 0.95rem;
 }
 
@@ -1044,15 +1050,15 @@
 
 #footer .border-top p {
   font-size: 0.9rem;
-  color: #aaa;
+  color: #000000;
 }
 
 #footer .border-top a {
-  color: #ccc;
+  color: #000000;
 }
 
 #footer .border-top a:hover {
-  color: #fff;
+  color: #000000;
 }
 
 
