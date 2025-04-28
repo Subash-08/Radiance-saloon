@@ -431,6 +431,7 @@
 
   background: url(/img/Mullet-transparent-bg-01.png) no-repeat;
   background-color: #ced7cf;
+  margin-top: 80px;
 }
 
 
@@ -1013,7 +1014,7 @@
 }
 
 #footer a:hover {
-  color: #000000;
+  color: #43ce7b;
 }
 
 #footer .widget-title {
@@ -1392,7 +1393,7 @@ button svg {
 
 #footer .border-top a {
   color: #000;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 #footer .border-top a:hover {
@@ -1405,4 +1406,133 @@ button svg {
   width: 82%;
   margin: auto;
   padding: 40px 0;
+}
+.salon-promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px; /* Add some side padding for small screens */
+  height: auto;
+  margin-top: 84px;
+  gap: 40px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.salon-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.salon-text h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.salon-text p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.salon-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #5abc81;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.salon-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 500px;
+}
+
+.salon-image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  background-color: #A8D5BA;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.salon-image img {
+  position: relative;
+  z-index: 1;
+  max-height: 500px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* RESPONSIVE: Tablet and below */
+@media (max-width: 992px) {
+  .salon-promo {
+    flex-direction: column-reverse;
+    text-align: left;
+    height: auto;
+    padding: 40px 20px;
+  }
+  .salon-text{
+    width: 82%;
+  }
+  .salon-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .salon-text p {
+    font-size: 1rem;
+  }
+
+  .salon-image {
+    min-height: 400px;
+  }
+
+  .salon-image::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .salon-image img {
+    max-height: 400px;
+  }
+}
+
+/* RESPONSIVE: Mobile */
+@media (max-width: 576px) {
+  .salon-text h1 {
+    font-size: 2rem;
+  }
+
+  .salon-text p {
+    font-size: 0.95rem;
+  }
+
+  .salon-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .salon-image {
+    min-height: 300px;
+  }
+
+  .salon-image::before {
+    width: 220px;
+    height: 220px;
+  }
+
+  .salon-image img {
+    max-height: 300px;
+  }
 }
