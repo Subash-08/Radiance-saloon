@@ -1,4 +1,15 @@
 /* about */
+.about_us{
+    background-color: #B8DA80;
+}
+.Specialist{
+    background-color: #B8DA80;
+
+}
+.Happy{
+    background-color: #B8DA80;
+
+}
 .about_head img{
     position: absolute;
     display: flex;
@@ -20,100 +31,8 @@
     height: auto;
 }
 
-
-/* awards */
-/* .Awards {
-    margin-top: 1rem;
-    background-color: #B8DA80;
-    padding: 2rem;
-    background-image: url(/images/buble.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-}
-
-.Awards h1 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
-.award_col {
-    position: relative;
-    width: 250px;
-    overflow: hidden;
-    border: 1px solid gray;
-    border-radius: 10px;
-    background-color: white;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.award_col img {
-    width: 120%;
-    height:300px;
-    object-fit: cover;
-    filter: brightness(50%);
-    transition: transform 0.4s ease;
-}
-
-.award_col .info {
-    position: absolute;
-    bottom: 0;
-    height: 56px;
-    width: 100%;
-    background-color: rgba(65, 64, 64, 0.6);
-    text-align: center;
-    padding: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-.award_col .name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #f9f9f9;
-}
-
-.award_col p {
-    margin-top: 1rem;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.award_col:hover img {
-    transform: scale(1.1);
-}
-
-.award_col:hover p {
-    opacity: 1;
-    transform: translateY(0);
-    animation: fadeup 0.1s forwards;
-}
-.award_col:hover .info{
-    left: 50%;
-    width: 50%;
-    top: 30px;
-    height: 60px;
-    color: black;
-}
-
-@keyframes fadeup{
-    from{
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
- .award_head{
+/* ======= */
+.award_head{
     margin-top: 5%;
  }
  .awards{
@@ -126,7 +45,6 @@
     background-position: center;
     width: 100%;
     height: 700px;
-    /* position: absolute; */
 
  }
  .award_head h1{
@@ -393,6 +311,77 @@
 }
 
 /*** FAQ'S End ***/
+
+.stats-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background: #beb7be; /* purple */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .stats-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stat-card {
+    background: transparent;
+    padding: 20px 10px;
+  }
+  
+  .stat-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .stat-card h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 1rem;
+  }
+  
+  .counter {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .stats-title {
+      font-size: 1.8rem;
+    }
+  
+    .stat-icon {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stats-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .stat-card h3 {
+      font-size: 1rem;
+    }
+  
+    .counter {
+      font-size: 1.5rem;
+    }
+  }
+  
 
 /* media query */
 @media (min-width: 320px) and (max-width:425px){

@@ -154,8 +154,8 @@
 }
 
 .radiance-overlay p {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 20px;
+  color: whitesmoke;
 }
 
 .radiance-services {
@@ -347,9 +347,12 @@
 
 @media (max-width: 576px) {
   .radiance-carousel {
-    height: 400px;
+    margin-top: 100px;
+    height: 560px;
   }
-
+  .radiance-overlay{
+    padding-top: 70px;
+  }
   .radiance-overlay h1 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -369,16 +372,12 @@
     justify-content: center;
   }
 
-  .radiance-call-box {
-    background-color: #8fcd89;
-    color: black;
-  }
 
-  .radiance-phone-icon {
-    font-size: 18px;
-  }
+  
 }
-
+.radiance-phone-icon {
+  font-size: 30px !important;
+}
 
 .radiance-bottom-features {
   overflow: hidden;
@@ -436,6 +435,8 @@
 
 
 .hair-salon-section {
+  width: 90% !important;
+  margin: auto;
   padding: 70px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -471,13 +472,19 @@
   gap: 30px;
   align-items: center;
 }
-
+.hair-image-box{
+  width: 80%;
+  margin: auto;
+}
 .hair-image-box img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-
+.hair-text-box{
+  width: 80%;
+  margin: auto;
+}
 .hair-text-box h2 {
   font-size: 14px;
   letter-spacing: 2px;
@@ -521,6 +528,7 @@
  
 }
 .hair-features {
+  width: 80%;
   display: flex;
   gap: 5px;
   margin-bottom: 20px;
@@ -576,7 +584,10 @@
   .hair-header-text h1 {
       font-size: 1.7rem;
   }
-
+.hair-salon-section{
+  padding: 20px;
+  margin: 20px;
+}
   .hair-small-title {
       font-size: 10px;
   }
@@ -602,6 +613,9 @@
   .hair-btn {
       padding: 8px 18px;
       font-size: 14px;
+  }
+  .hair-features{
+    margin-left: -50px;
   }
 }
 
@@ -978,6 +992,9 @@
   z-index: 10001;
 }
 
+
+
+
 /* Footer Base Styling */
 #footer {
   background-color: #e7e7e7; /* Pure black */
@@ -1038,7 +1055,10 @@
   background-color: #fff;
   color: #000;
 }
-
+#footer i {
+font-size: 20px !important;
+color: #000;
+}
 #footer .social-links svg {
   fill: currentColor;
 }
@@ -1215,4 +1235,174 @@
     padding: 6px 16px;
     margin-left: 0;
   }
+}
+
+
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .radiance-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .radiance-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .radiance-services {
+    display: none; /* Hide services on mobile */
+  }
+
+  .radiance-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .radiance-call-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* ===== Default button style ===== */
+
+
+/* ===== Tablet view (up to 991px) ===== */
+@media (max-width: 991px) {
+  .radiance-services {
+    display: none; /* Hide services for tab and mobile */
+  }
+}
+
+/* ===== Mobile view (up to 576px) ===== */
+@media (max-width: 576px) {
+  .radiance-btn {
+    width: 100%; /* Full width button */
+    padding: 18px 0; /* More height */
+    font-size: 1.2rem;
+    border-radius: 10px; /* Slightly less rounded */
+  }
+
+  .radiance-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .radiance-call-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radiance-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .radiance-overlay p {
+    font-size: 1rem;
+  }
+}
+
+
+/* From Uiverse.io by Yaya12085 */ 
+button {
+  border: none;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  background-color:#A8D5BA;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  transition: all 0.6s ease;
+}
+
+button:hover {
+  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+
+button:focus,
+button:active {
+  opacity: 0.85;
+  box-shadow: none;
+}
+
+button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+
+/* ===== Footer Social Icons ===== */
+#footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cacaca;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+#footer .social-links a i {
+  font-size: 20px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+#footer .social-links a:hover {
+  background-color: #ffffff;
+}
+
+#footer .social-links a:hover i {
+  color: #000000; /* Icon color stays black on hover */
+}
+
+/* No need for this anymore because you're not using SVGs */
+/* #footer .social-links svg {
+  fill: currentColor;
+} */
+
+/* ===== Bottom Border Section ===== */
+#footer .border-top {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+#footer .border-top p {
+  font-size: 0.9rem;
+  color: #000;
+  margin: 0;
+}
+
+#footer .border-top a {
+  color: #000;
+  text-decoration: underline;
+}
+
+#footer .border-top a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ===== Footer Container Width ===== */
+.footer-div {
+  width: 82%;
+  margin: auto;
+  padding: 40px 0;
 }

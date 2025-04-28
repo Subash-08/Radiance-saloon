@@ -257,6 +257,90 @@ button:hover {
   color: white;
 }
 
+/* bridal_service */
+
+
+.bridal-services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.bridal-services h1 {
+  font-size: 48px;
+  color: #201e1e;
+  margin-bottom: 40px;
+  font-family: 'Cursive', sans-serif;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #c4c1c2;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.book-btn {
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid #bddf86;
+  color: #fcfdf9;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #bddf86;
+  color: #fff;
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bridal-services h1 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bridal-services h1 {
+    font-size: 28px;
+  }
+}
+
 .Trail {
   margin-top: -10rem;
   background-color: #d7eba5;
