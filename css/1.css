@@ -101,7 +101,11 @@
   color: #888;
 }
 
-
+.toggle-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .radiance-carousel {
   margin-top: 84px;
@@ -998,7 +1002,7 @@
 
 /* Footer Base Styling */
 #footer {
-  background-color: #e7e7e7; /* Pure black */
+  background-color: #e7e7e7 !important; /* Pure black */
   margin-top: 80px;
   color: #000000;
   width: 100%;
@@ -1007,6 +1011,7 @@
 #footer .container {
    padding: 0 !important;
 }
+
 #footer a {
   color: #000000;
   text-decoration: none;
@@ -1019,7 +1024,8 @@
 
 #footer .widget-title {
   color: #000000;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  text-align: left;
   font-weight: 600;
 }
 
@@ -1048,13 +1054,16 @@
   background-color: #cacaca;
   border-radius: 50%;
   width: 36px;
+  margin: 3px;
   height: 36px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.foo-icon{
+  margin-top: 7px;
+}
 #footer .social-links a:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
 }
 #footer i {
 font-size: 20px !important;
@@ -1093,9 +1102,7 @@ color: #000;
     text-align: start !important;
   }
 
-  #footer .mb-4 {
-    text-align: center;
-  }
+
 
   #footer .social-links {
     justify-content: center !important;
@@ -1109,7 +1116,9 @@ color: #000;
     text-align: center;
   }
 }
-
+.footer-logo{
+  margin-left: -40px;
+}
 
 .about .display-1{
   font-size: 60px;
@@ -1535,4 +1544,52 @@ button svg {
   .salon-image img {
     max-height: 300px;
   }
+}
+.call_to_action{
+  width: 80%;
+  height: 100px;
+  background-color: #009CFF;
+  top: -50px;
+  left: 100px;
+}
+
+
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px; /* Adjust for vertical position */
+  right: 20px;  /* Adjust for horizontal position */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.whatsapp-link img {
+  width: 50px;  /* Adjust the size as needed */
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-link img:hover {
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+
+.call-link {
+  position: fixed;
+  bottom: 80px;  /* Matches WhatsApp icon's vertical position */
+  right: 20px;   /* Adjust horizontal distance from WhatsApp icon */
+  z-index: 1000;
+}
+
+.call-link img {
+  width: 50px;  /* Adjust size as needed */
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.call-link img:hover {
+  transform: scale(1.1); /* Enlarges slightly on hover */
 }
