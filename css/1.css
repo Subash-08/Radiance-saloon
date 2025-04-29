@@ -811,6 +811,9 @@
 }
 
 @media (max-width: 480px) {
+  .plans-container {
+      padding: 10px;
+}
   .plans-item {
       font-size: 14px; /* Make the text smaller for mobile devices */
   }
