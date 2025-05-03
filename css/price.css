@@ -120,7 +120,11 @@ body {
 }
 
 .Care {
+  padding-top: 50px;
   text-align: center;
+}
+.white{
+  color: whitesmoke;
 }
 
 .service-section {
@@ -467,4 +471,241 @@ img.img-fluid {
   max-width: 100%;
   height: auto;
   display: inline-block;
+}
+
+
+
+
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.pricing-left {
+  flex: 1 1 50%;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.pricing-left img {
+  width: 380px;
+  margin: auto;
+  height: 550px;
+  object-fit: fill;
+  transition: 0.5s ease;
+  display: block;
+}
+
+.pricing-right {
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.pricing-tab {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  color: #0b0b0b;
+}
+
+.pricing-tab.pricing-active {
+  color: #5a846b;
+  text-decoration: underline;
+}
+
+.pricing-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.pricing-content p {
+  margin-bottom: 10px;
+  text-align: left !important;
+  color: #000;
+}
+
+.pricing-book-btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5a846b;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔁 Responsive Media Queries */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-left,
+  .pricing-right {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .pricing-left img {
+    height: auto; /* Allow height to adjust on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pricing-tab {
+    font-size: 16px;
+  }
+
+  .pricing-content {
+    font-size: 14px;
+  }
+
+  .pricing-book-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+
+.Skin_care {
+  background-color: #697e55;
+}
+
+.skincare-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skincare-image-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 10px;
+}
+
+.skincare-image-container img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skincare-content-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.skincare-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.skincare-tab {
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.skincare-tab.skincare-active {
+  color: white;
+}
+
+.skincare-tab.skincare-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.skincare-content p {
+  font-size: 16px;
+  margin: 10px auto;
+  text-align: left;
+  color: black;
+  line-height: 1.6;
+}
+
+.skincare-content .note {
+  font-size: 14px;
+  color: #eee;
+  margin-top: 10px;
+}
+
+.skincare-book-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background: white;
+  color: #682a6b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skincare-book-btn:hover {
+  background: #f1e9f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skincare-wrapper {
+    flex-direction: column;
+  }
+
+  .skincare-tabs {
+    gap: 10px;
+  }
+
+  .skincare-tab {
+    font-size: 16px;
+  }
+
+  .skincare-content p {
+    font-size: 16px;
+  }
+
+  .skincare-book-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }

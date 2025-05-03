@@ -343,7 +343,7 @@ button:hover {
 
 .Trail {
   margin-top: -10rem;
-  background-color: #d7eba5;
+  background-color: #6A7E5F;
   padding: 2rem;
   border-radius: 20px;
 }
@@ -360,7 +360,7 @@ button:hover {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 1rem;
-  color: #333;
+  color: white;
   line-height: 1.6;
 }
 

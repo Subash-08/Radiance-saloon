@@ -1,13 +1,13 @@
 /* about */
 .about_us{
-    background-color: #B8DA80;
+    background-color: #6A7E5F;
 }
 .Specialist{
-    background-color: #B8DA80;
+    background-color: #6A7E5F;
 
 }
 .Happy{
-    background-color: #B8DA80;
+    background-color: #6A7E5F;
 
 }
 .about_head img{
@@ -38,7 +38,7 @@
  .awards{
     display: flex;
     margin-top: 2rem;
-    background-color: #B8DA80;
+    background-color: #6A7E5F;
     padding: 2rem;
     background-image: url(/images/buble.png);
     background-size: cover;
@@ -224,12 +224,13 @@
 .para{
     border: 1px solid gray;
     padding: 20px;
-    background-color: #B8DA80;
+    background-color: #6A7E5F;
     border-radius: 20px;
 }
 .para p{
     font-size: 20px;
     font-weight: 800px;
+    color: white
 }
 
 

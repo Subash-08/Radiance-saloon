@@ -127,10 +127,10 @@
   
     <!-- Right: Tabs and Content -->
     <div class="service-content" data-aos="zoom-in" data-aos-duration="1000">
-      <div class="service-tabs">
-        <div class="service-tab active" onclick="switchTab('styling', this)">Hair Styling</div>
-        <div class="service-tab" onclick="switchTab('colour', this)">World of Colour</div>
-        <div class="service-tab" onclick="switchTab('texture', this)">Texture & Hair Treatments</div>
+      <div class="services">
+        <div class="service active" onclick="showContent('styling', this)">Hair Styling</div>
+        <div class="service" onclick="showContent('colour', this)">World of Colour</div>
+        <div class="service" onclick="showContent('texture', this)">Texture & Hair Treatments</div>
       </div>
   
       <div id="serviceDescription" class="service-description">
@@ -157,11 +157,11 @@
   
       <!-- Right: Tabs and Content -->
       <div class="service-skin_content" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="service-skins" >
-          <div class="service-skin active" onclick="switchTab('add', this)">Add On's</div>
-          <div class="service-skin" onclick="switchTab('skin', this)">Skin Goals</div>
-          <div class="service-skin" onclick="switchTab('Luxury', this)">Luxury Facials</div>
-          <div class="service-skin" onclick="switchTab('Indulgent', this)">Indulgent Facials</div>
+        <div class="skins" >
+          <div class="skin active" onclick="showContent('add', this)">Add On's</div>
+          <div class="skin" onclick="showContent('skin', this)">Skin Goals</div>
+          <div class="skin" onclick="showContent('Luxury', this)">Luxury Facials</div>
+          <div class="skin" onclick="showContent('Indulgent', this)">Indulgent Facials</div>
         </div>
   
         <div id="serviceSkin" class="service-skin_text">
@@ -355,115 +355,8 @@
       event.target.classList.add('active');
     }
 
-    const serviceData = {
-    styling: {
-      text: `Get runway-ready with professional Hair Styling! Whether you want curls, sleek straight hair, or intricate updos, our stylists have you covered.<div class="service-note">(Services vary by location)</div>`,
-      img: "images/table_img/h_1.png"
-    },
-    colour: {
-      text: `Step into a world of vibrant transformations! Whether it's the sun-kissed elegance of Balayage, the bold contrast of Highlights, or a full Global Hair Colour makeover, our expert colorists create the perfect shade for you!<div class="service-note">(Available only in selected salons)</div>`,
-      img: "images/table_img/h_2.png"
-    },
-    texture: {
-      text: `Revive and protect your hair with our special Texture & Hair Treatments! Choose from Keratin, Smoothening, or deep conditioning to restore your hair’s natural shine.<div class="service-note">(Treatments may vary at select locations)</div>`,
-      img: "images/table_img/h_3.png"
-    }
-  };
-
-  function switchTab(serviceName, element) {
-    // Change content
-    document.getElementById('serviceDescription').innerHTML = serviceData[serviceName].text;
-    // Change image
-    document.getElementById('serviceImage').src = serviceData[serviceName].img;
-
-    // Update active tab
-    document.querySelectorAll('.service-tab').forEach(tab => tab.classList.remove('active'));
-    element.classList.add('active');
-  }
-
-
-  function switchTab(contentType, tabElement) {
-    const serviceSkinContent = document.getElementById('serviceSkin');
-    const serviceSkinImage = document.getElementById('serviceskin_Image');
-
-    let content = '';
-    let imageSrc = 'images/table_img/s_1.png'; // Default fallback
-
-    if (contentType === 'add') {
-      content = `Enhance your skincare routine with personalized add-ons! Hydrate and refresh your skin with luxurious treatments.`;
-      imageSrc = 'images/table_img/s_1.png';
-    } else if (contentType === 'skin') {
-      content = `Achieve your dream skin goals with our tailored facial therapies and skincare solutions.`;
-      imageSrc = 'images/table_img/s_2.png';
-    } else if (contentType === 'Luxury') {
-      content = `Experience the ultimate pampering with our luxury facials featuring high-end products and expert care.`;
-      imageSrc = 'images/table_img/s_3.png';
-    } else if (contentType === 'Indulgent') {
-      content = `Indulge in deep nourishment with facials crafted to relax, revitalize, and restore your skin’s natural glow.`;
-      imageSrc = 'images/table_img/s_4.png';
-    }
-
-    // Update content
-    serviceSkinContent.innerHTML = content;
-
-    // Safe image switching
-    fetch(imageSrc)
-      .then((res) => {
-        if (res.ok) {
-          serviceSkinImage.src = imageSrc;
-        } else {
-          serviceSkinImage.src = 'images/table_img/default.png';
-        }
-      })
-      .catch(() => {
-        serviceSkinImage.src = 'images/table_img/default.png';
-      });
-
-    // Update active tab
-    const tabs = document.querySelectorAll('.service-skins .service-skin');
-    tabs.forEach(tab => tab.classList.remove('active'));
-    tabElement.classList.add('active');
-  }
-
-
-    </script>
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>
 
   
   <!-- JavaScript Libraries -->

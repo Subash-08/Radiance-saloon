@@ -124,31 +124,26 @@
         </div>
       </div>
     </div>
-    
-<!-- hair -->
+
+   
+
 
 <div class="section hair_care">
-    <h1 class="Care">Hair Care</h1>
-<div class="service-section">
-    <!-- Left: Image -->
-    <div class="service-image" data-aos="zoom-in" data-aos-duration="1000">
-      <img id="serviceImage" src="images/table_img/h_1.png" alt="Service">
+  <h1 class="Care">Hair Care</h1>
+  <div class="pricing-container">
+    <div class="pricing-left">
+      <img id="pricing-carousel-image" src="images/pricing/2.png" alt="Hair Treatment" />
     </div>
-  
-    <!-- Right: Tabs and Content -->
-    <div class="service-content" data-aos="zoom-in" data-aos-duration="1000">
-      <div class="service-tabs">
-        <div class="service-tab active" onclick="switchTab('styling', this)">Hair Styling</div>
-        <div class="service-tab" onclick="switchTab('colour', this)">World of Colour</div>
-        <div class="service-tab" onclick="switchTab('texture', this)">Texture & Hair Treatments</div>
+    
+    <div class="pricing-right">
+      <div class="pricing-tabs">
+        <span class="pricing-tab pricing-active" onclick="changePricingTab(0)">Hair Styling</span>
+        <span class="pricing-tab" onclick="changePricingTab(1)">World of Colour</span>
+        <span class="pricing-tab" onclick="changePricingTab(2)">Texture & Hair Treatments</span>
       </div>
-  
-      <div id="serviceDescription" class="service-description">
-        Get runway-ready with professional Hair Styling! Whether you want curls, sleek straight hair, or intricate updos, our stylists have you covered.
-        <div class="service-note">(Services vary by location)</div>
+      <div id="pricing-content" class="pricing-content">
+        <!-- Dynamic text content will load here -->
       </div>
-  
-      <a href="#" class="service-button">Book Now</a>
     </div>
   </div>
 </div>
@@ -157,55 +152,54 @@
 <!-- skin -->
 
 <div class="section Skin_care">
-    <h1 class="Care">Skin Care</h1>
+  <h1 class="Care white">Skin Care</h1>
+
+  <div class="skincare-wrapper">
+    <div class="skincare-image-container">
+      <img id="skincare-image" src="images/pricing/8.png" alt="Skin Care" />
+    </div>
   
-    <div class="service-skin_section">
-      <!-- Left: Image -->
-      <div class="service-skin_image" data-aos="zoom-in" data-aos-duration="1000">
-        <img id="serviceskin_Image" src="images/table_img/s_1.png" alt="Service Image">
+    <div class="skincare-content-container">
+      <div class="skincare-tabs">
+        <div class="skincare-tab skincare-active" onclick="changeSkincareTab(0)">Add On's</div>
+        <div class="skincare-tab" onclick="changeSkincareTab(1)">Skin Goals</div>
+        <div class="skincare-tab" onclick="changeSkincareTab(2)">Luxury Facials</div>
+        <div class="skincare-tab" onclick="changeSkincareTab(3)">Indulgent Facials</div>
       </div>
   
-      <!-- Right: Tabs and Content -->
-      <div class="service-skin_content" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="service-skins" >
-          <div class="service-skin active" onclick="switchTab('add', this)">Add On's</div>
-          <div class="service-skin" onclick="switchTab('skin', this)">Skin Goals</div>
-          <div class="service-skin" onclick="switchTab('Luxury', this)">Luxury Facials</div>
-          <div class="service-skin" onclick="switchTab('Indulgent', this)">Indulgent Facials</div>
-        </div>
-  
-        <div id="serviceSkin" class="service-skin_text">
-          Enhance your skincare routine with personalized add-ons!
-        </div>
-  
-        <a href="#" class="service-skin_button">Book Now</a>
+      <div class="skincare-content" id="skincare-content">
+        <p>Enhance your facial with collagen masks, detox boosters, or eye care treatments for that extra glow!</p>
+        <button class="skincare-book-btn">Book Now</button>
       </div>
     </div>
   </div>
   
-<!-- body -->
-
-<div class="section bodycare">
-    <div class="service-body_section">
-       <div class="row">
-        <div class="col-lg-6">
-            <div class="serviceBody_Image" data-aos="fade-left" data-aos-duration="1000">
-            <img src="images/table_img/b_2.png" alt="Service Image">
-        </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="service_text" data-aos="fade-right" data-aos-duration="1000">
-                <p>Stay well-groomed with expert waxing and body care services at Naturals Salon! 
-                    From Flavored Cartridge Waxing to Peel-Off Waxing for sensitive areas,<br>
-                    we ensure smooth, clean, and comfortable results. Stay fresh and confident every day!</p>
-            <p>(Certain services are available only in selected salons)</p>
-            <a href="#" class="service_button">Book Now</a>
-        </div>
-       </div>
-    </div>
   
-    </div>
+</div>
+
+<!-- body -->
+<div class="section hair_care">
+<h1 class="Care">Body Care</h1>
+<div class="pricing-container">
+  <div class="pricing-left">
+    <img id="pricing-carousel-image" src="images/pricing/15.png" alt="Hair Treatment" />
+  </div>
+  
+  <div class="pricing-right">
+    <div class="pricing-tabs">
+      
      
+    </div>
+    <div id="pricing-content" class="pricing-content">
+      <p>Stay well–groomed with expert waxing and body care services at Naturals Salon! From Flavored Cartridge Waxing to Peel-Off Waxing for sensitive areas, we ensure smooth, clean, and comfortable results. Stay fresh and confident every day!</p>
+      <button class="skincare-book-btn">Book Now</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
 
 
     <footer id="footer" class="bg-black pt-5" data-bs-theme="dark">
@@ -493,6 +487,72 @@
   </script>
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+  
+  <script>
+    const pricingImages = [
+  "/images/pricing/2.png", // Hair Styling
+  "/images/pricing/4.png", // World of Colour
+  "/images/pricing/5.png"  // Texture & Hair Treatments
+];
+
+const pricingContents = [
+  `
+    <p>Style your hair with trendy looks and stunning transformations for any occasion. Whether it’s curls, waves, or sleek finishes — we’ve got it all.</p>
+    <button class="pricing-book-btn">Book Now</button>
+  `,
+  `
+    <p>Explore vibrant hair colours — from highlights to global shades — crafted with the latest techniques to give your hair life and shine.</p>
+    <button class="pricing-book-btn">Book Now</button>
+  `,
+  `
+    <p>Revive your hair with expert texture treatments including Keratin, Smoothening, and Botox. Say goodbye to frizz and hello to healthy, shiny hair!</p>
+  
+    <button class="pricing-book-btn">Book Now</button>
+  `
+];
+function changePricingTab(index) {
+  document.getElementById("pricing-carousel-image").src = pricingImages[index];
+
+  // Update tab active state
+  const tabs = document.querySelectorAll(".pricing-tab");
+  tabs.forEach(tab => tab.classList.remove("pricing-active"));
+  tabs[index].classList.add("pricing-active");
+
+  // Update content
+  document.getElementById("pricing-content").innerHTML = pricingContents[index];
+}
+
+// Load default
+window.onload = () => changePricingTab(0);
+const skincareContents = [
+  {
+    text: `<p>Enhance your facial with collagen masks, detox boosters, or eye care treatments for that extra glow!</p>`,
+    img: '/images/pricing/8.png'
+  },
+  {
+    text: `<p>Achieve your dream skin with expert care! Whether it's hydration, brightening, anti-aging, or acne control, Naturals Salon offers customized treatments to match your unique skin goals. Glow with confidence every day!</p>`,
+    img: '/images/pricing/9.png'
+  },
+  {
+    text: `<p>Pamper yourself with luxurious facials using premium products and techniques. These indulgent treatments rejuvenate your skin and relax your mind.</p>`,
+    img: '/images/pricing/10.png'
+  },
+  {
+    text: `<p>Indulge in specialized facials designed for ultimate relaxation and skin renewal. A blend of aroma therapy, deep cleansing, and massage for a spa-like glow.</p>`,
+    img: '/images/pricing/11.png'
+  }
+];
+
+function changeSkincareTab(index) {
+  const tabs = document.querySelectorAll('.skincare-tab');
+  tabs.forEach(tab => tab.classList.remove('skincare-active'));
+  tabs[index].classList.add('skincare-active');
+
+  document.getElementById('skincare-content').innerHTML = skincareContents[index].text + `<button class="skincare-book-btn">Book Now</button>`;
+  document.getElementById('skincare-image').src = skincareContents[index].img;
+}
+
+  </script>
 </body>
 
 </html>
