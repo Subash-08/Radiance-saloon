@@ -81,10 +81,13 @@
   }
   
   .bg-jumbotron-nail {
-    background: url(../img/nail/10001.jpg) no-repeat center center;
+    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/nail/10001.jpg), no-repeat center center;
     background-size: cover;
   }
-
+  .bg-jumbotron-hair {
+    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/home/10002.jpg), no-repeat center center;
+    background-size: cover;
+  }
   .toggle-container {
     max-width: 1200px;
     margin: 0 auto;

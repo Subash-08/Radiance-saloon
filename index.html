@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Radiance Saloon</title>
+    <title>Radiance Beauty Salon | Premium Beauty & Wellness Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="radiance beauty salon" name="keywords">
+    <meta content="Welcome to Radiance Beauty Salon, offering exceptional beauty, skin, hair, and body care services. Experience luxury treatments from certified professionals in a serene atmosphere." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -111,6 +111,37 @@
     </div>
 
 
+    <div id="app" class="wrapper first-load">
+        <div class="slide-wrapper" 
+             v-for="(slide, index) in slides" 
+             v-bind:class="{ active: index === currentSlide }"
+             v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
+            <div class="slide-inner">
+                <div class="slide-bg-text">
+                    <p>{{ slide.headlineFirstLine }}</p>
+                    <p>{{ slide.headlineSecondLine }}</p>
+                </div>
+                <div class="slide-rect-filter">
+                    <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-content-text"><p style="color: aliceblue;">{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a class="slide-content-cta">Book Now</a></div>
+                <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
+        </div>
+    <div class="controls-container">
+        <button class="controls-button" 
+                v-for="(slide, index) in slides"
+                v-bind:class="{ active: index === currentSlide }"
+                v-on:click="updateSlide(index)">{{ slide.headlineFirstLine }} {{ slide.headlineSecondLine }}</button>
+    </div>
+    <div class="pagination-container">
+        <span class="pagination-item"
+              v-for="(slide, index) in slides"
+              v-bind:class="{ active: index === currentSlide }"
+              v-on:click="updateSlide(index)"></span>
+    </div>
+</div>
+
     <!-- <div class="radiance-carousel">
         <div class="radiance-slide radiance-active">
             <img class="radiance-active radiance-slide" src="/images/hair/10001.jpg" />
@@ -193,7 +224,7 @@
 
 
         </div>
-    </div> -->
+    </div>  -->
 
 
 
@@ -446,7 +477,7 @@
                     <img class="img-fluid w-100" src="img/about.jpg" alt="">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-1">Your Best Spa, Beauty & Skin Care Center</h1>
+                    <h2 class="display-1 text-uppercase">Why Choose Radiance Beauty Salon</h2>
                     <p class="pl-4 border-left border-primary">"Discover unparalleled luxury and transformation at Radiance, your premier destination for comprehensive beauty and skincare solutions. Our expert therapists combine cutting-edge techniques with personalized care to reveal your most radiant self."</p>
                     <div class="row pt-3">
                         <div class="col-6">
@@ -472,12 +503,12 @@
     <div class="container-fluid px-0 py-5 service">
         <div class="row mx-0 justify-content-center text-center">
             <div class="col-lg-6">
-                <h1 class="display-1 text-uppercase">Spa & Beauty Services</h1>
+                <h2 class="display-1 text-uppercase">Our Signature Beauty Treatments</h2>
             </div>
         </div>
         <div class="owl-carousel service-carousel">
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                <img class="img-fluid" src="img/service-1.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Body Massage</h4>
                     <p class="text-white px-3 mb-3">"Surrender to the healing touch of our skilled massage therapists as they release tension and restore harmony throughout your body. Our customized massage techniques promote circulation, relieve muscle pain, and create a profound sense of wellbeing."</p>
@@ -487,7 +518,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                <img class="img-fluid" src="img/service-2.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stone Therapy</h4>
                     <p class="text-white px-3 mb-3">"Experience the ancient healing power of hot stone therapy, where smooth, heated basalt stones melt away stress and muscle tension. The perfect balance of heat and pressure penetrates deep into tissues, creating a state of total relaxation and renewal."</p>
@@ -497,7 +528,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                <img class="img-fluid" src="img/service-3.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Facial Therapy</h4>
                     <p class="text-white px-3 mb-3">"Indulge in our signature facial therapies that combine science-backed treatments with luxurious pampering for transformative results. Each session is tailored to your skin's needs, targeting concerns while enhancing your natural beauty for a radiant, youthful glow."</p>
@@ -507,17 +538,17 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-4.jpg" alt="">
+                <img class="img-fluid" src="img/service-4.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Skin Care</h4>
-                    <p class="text-white px-3 mb-3">"Discover transformative skin care treatments that target concerns from aging and acne to hyperpigmentation and sensitivity with clinical precision. Our customized skin care protocols use medical-grade products and professional techniques to reveal your skin's healthiest, most radiant appearance."</p>
+                    <p class="text-white px-3 mb-3">"Discover transformative skin care treatments that target concerns from aging and acne to hyperpigmentation and sensitivity with clinical precision. Our customized <a href="skin-care.html">skin care</a> protocols use medical-grade products and professional techniques to reveal your skin's healthiest, most radiant appearance."</p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-5.jpg" alt="">
+                <img class="img-fluid" src="img/service-5.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stream Bath</h4>
                     <p class="text-white px-3 mb-3">"Detoxify and purify your body in our luxurious steam bath that opens pores, eliminates toxins, and stimulates circulation for total body wellness. The therapeutic steam infused with essential oils enhances respiratory health while providing deep relaxation for muscles and mind."</p>
@@ -527,7 +558,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-6.jpg" alt="">
+                <img class="img-fluid" src="img/service-6.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Face Masking</h4>
                     <p class="text-white px-3 mb-3">"Rejuvenate and restore your complexion with our specialized face masking treatments using premium botanical ingredients. Each mask is carefully selected to address your unique skin concerns, delivering deep nourishment and visible results."</p>
@@ -607,7 +638,7 @@
                             </div>
                             <h3 class="post-title mb-2"><a href="single-blog.html">This Season’s Trending Hair
                                     Styles</a></h3>
-                            <p>From beach waves to sleek bobs, explore the hottest hair styling trends this season and
+                            <p>From beach waves to sleek bobs, explore the hottest <a href="hair-care.html">hair</a> styling trends this season and
                                 find the perfect look that fits your vibe.</p>
                         </div>
                     </div>
@@ -862,7 +893,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 text-start text-md-end">
-                        <div class="footer-menu">
+                        <div class="footer-menu footer-con">
                             <h5 class="widget-title mb-4">Contact Us</h5>
 
                             <p class="mb-2 branch_add d-flex"><i class="fa fa-map-marker-alt me-3 mx-2 foo-icon"></i>10/1, Vinayagar kovil street, <br /> Ashram Road, Athvaidha, <br /> Fairlands, Salem, Tamil Nadu 636016</p>
@@ -1011,6 +1042,145 @@
 
 
         </script>
+      
+           
+      <script>
+        const slides1 = [
+          {
+            headlineFirstLine: "Hair Styling",
+            headlineSecondLine: "",
+            sublineFirstLine: "Nihil sub sole",
+            sublineSecondLine: "novum",
+            bgImg: "images/home/10002.jpg",
+            rectImg: ""
+          },
+          {
+            headlineFirstLine: "Hair Glossing",
+            headlineSecondLine: "",
+            sublineFirstLine: "Il n'y a rien de neuf sous",
+            sublineSecondLine: "le soleil",
+            bgImg: "images/home/10001.jpg",
+            rectImg: ""
+          },
+          {
+            headlineFirstLine: "Straightening",
+            headlineSecondLine: "",
+            sublineFirstLine: "Τίποτα καινούργιο κάτω από",
+            sublineSecondLine: "τον ήλιο",
+            bgImg: "images/home/10004.jpg",
+            rectImg: ""
+          }
+        ];
+      
+        let currentSlide1 = 0;
+        let isFirstLoad = true;
+        let isPreviousSlide = false;
+      
+        const app = document.getElementById('app');
+      
+        function render() {
+          app.className = `wrapper ${isFirstLoad ? 'first-load' : ''} ${isPreviousSlide ? 'is-previous' : ''}`;
+          app.innerHTML = ''; // Clear content
+      
+          slides1.forEach((slide, index) => {
+            const slideWrapper = document.createElement('div');
+            slideWrapper.className = `slide-wrapper${index === currentSlide1 ? ' active' : ''}`;
+            slideWrapper.style.zIndex = slides1.length - index;
+            slideWrapper.style.backgroundImage = `url(${slide.bgImg})`;
+      
+            slideWrapper.innerHTML = `
+              <div class="slide-inner">
+                <div class="slide-bg-text">
+                  <p>${slide.headlineFirstLine}</p>
+                  <p>${slide.headlineSecondLine}</p>
+                </div>
+                <div class="slide-rect-filter">
+                  <div class="slide-rect" style="border-image-source: url(${slide.rectImg});"></div>
+                </div>
+                <div class="slide-content">
+                  <h1 class="slide-content-text">
+                    <p>${slide.headlineFirstLine}</p>
+                    <p>${slide.headlineSecondLine}</p>
+                  </h1>
+                  <a class="slide-content-cta">Call To Action</a>
+                </div>
+                <h2 class="slide-side-text">
+                  <span>${slide.sublineFirstLine} / </span>
+                  <span>${slide.sublineSecondLine}</span>
+                </h2>
+              </div>
+            `;
+            app.appendChild(slideWrapper);
+          });
+      
+          // Controls
+          const controlsContainer = document.createElement('div');
+          controlsContainer.className = 'controls-container';
+      
+          slides1.forEach((slide, index) => {
+            const btn = document.createElement('button');
+            btn.className = `controls-button${index === currentSlide1 ? ' active' : ''}`;
+            btn.textContent = `${slide.headlineFirstLine} ${slide.headlineSecondLine}`;
+            btn.onclick = () => updateSlide(index);
+            controlsContainer.appendChild(btn);
+          });
+      
+          app.appendChild(controlsContainer);
+      
+          // Pagination
+          const pagination = document.createElement('div');
+          pagination.className = 'pagination-container';
+      
+          slides1.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.className = `pagination-item${index === currentSlide1 ? ' active' : ''}`;
+            dot.onclick = () => updateSlide(index);
+            pagination.appendChild(dot);
+          });
+      
+          app.appendChild(pagination);
+        }
+      
+        function updateSlide(index) {
+          isPreviousSlide = index < currentSlide1;
+          currentSlide1 = index;
+          isFirstLoad = false;
+          render();
+        }
+      
+        function setupSwipe() {
+          let startX = 0;
+          let endX = 0;
+      
+          app.addEventListener("touchstart", (e) => startX = e.touches[0].pageX);
+          app.addEventListener("touchmove", (e) => endX = e.touches[0].pageX);
+          app.addEventListener("touchend", () => {
+            const diff = startX - endX;
+            if (diff < -100 && currentSlide1 > 0) {
+              isPreviousSlide = true;
+              currentSlide1--;
+              isFirstLoad = false;
+              render();
+            } else if (diff > 100 && currentSlide1 < slides1.length - 1) {
+              isPreviousSlide = false;
+              currentSlide1++;
+              isFirstLoad = false;
+              render();
+            }
+          });
+        }
+      
+        // Initialize
+        render();
+        setupSwipe();
+      </script>
+      
+
+    <script src="js/active.js"></script>
+    <!-- Active JS -->
+    <script src="css/plugins.js"></script>
+    
+    <script src="js/jquery-2.2.4.min.js"></script>
 
 </body>
 
