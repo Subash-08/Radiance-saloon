@@ -6,7 +6,9 @@
     <title>Radiance Beauty Salon | Premium Beauty & Wellness Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="radiance beauty salon" name="keywords">
-    <meta content="Welcome to Radiance Beauty Salon, offering exceptional beauty, skin, hair, and body care services. Experience luxury treatments from certified professionals in a serene atmosphere." name="description">
+    <meta
+        content="Welcome to Radiance Beauty Salon, offering exceptional beauty, skin, hair, and body care services. Experience luxury treatments from certified professionals in a serene atmosphere."
+        name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -32,6 +34,11 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/1.css" rel="stylesheet">
 
+    <style>
+        .box {
+            background-color: #6A7E5F;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,61 +52,75 @@
 
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar-div">
+<!-- Top Bar Start -->
+<div class="top-bar bg-dark text-white">
+   <div class="tob_bar py-2 px-3 d-flex justify-content-between align-items-center">
+   <a href="images/rate_card.pdf" download target="_blank" class="btn btn-sm btn-warning text-white">
+    Ratecard
+</a>
+ <a href="a"><div class="text-center font-weight-bold">Book Your Appointment</div></a>
+    <div class="social-icons d-flex gap-2">
+        <a href="https://www.facebook.com/radiancebridalstudio" class="text-warning mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/radiance_unisexsalon/?hl=en" class="text-warning mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@rekharadianceunisexsaloon" class="text-warning mx-2"><i class="fab fa-youtube"></i></a>
+         <a href="https://www.linkedin.com/in/rekha-k-1868a6275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-warning mx-2"><i class="fab fa-linkedin"></i></a>
+   </div>
+  </div>
+</div>
+<!-- Top Bar End -->
 
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-">
-    
-          <a href="index.html" class="navbar-brand ml-lg-3">
-            <img class="nav-logo" src="images/Radiance Logo.png" />
-          </a>
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
-              <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
-                <div class="dropdown-menu rounded-0 m-0">
-                  <a href="hair-care.html" class="dropdown-item">Hair Care</a>
-                  <a href="skin-care.html" class="dropdown-item">Skin Care</a>
-                  <a href="nail-care.html" class="dropdown-item">Nail Care</a>
-                  <a href="body-care.html" class="dropdown-item">Body Care</a>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light px-lg-5">
+    <!-- Logo -->
+    <a href="index.html" class="navbar-brand">
+        <img class="nav-logo" src="images/Radiance Logo.png" alt="Logo">
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+        <ul class="navbar-nav">
+
+            
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="hair-care.html">Hair Care</a>
+                    <a class="dropdown-item" href="skin-care.html">Skin Care</a>
+                    <a class="dropdown-item" href="nail-care.html">Nail Care</a>
+                    <a class="dropdown-item" href="body-care.html">Body Care</a>
+                    <a class="dropdown-item" href="Bridal.html">Bridal</a>
                 </div>
-              </div>
-              <a href="Bridal.html" class="nav-item nav-link">Bridal</a>
-              <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pricing</a>
-                <div class="dropdown-menu rounded-0 m-0">
-                    <a href="him.html" class="dropdown-item">For Men</a>
-                    <a href="her.html" class="dropdown-item">For Women</a>
-                </div>
-              </div>    
-              <a href="Franchise.html" class="nav-item nav-link">Franchise</a>
-              <a href="academy.html" class="nav-item nav-link">Academy</a>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-              <a href="offer.html" class="btn btn-book-now d-none d-lg-block">Offer</a>
-              <!-- <button class="btn toggle-mode-btn d-none d-lg-block" id="modeToggle" title="Toggle Dark/Light Mode">
-                          <i class="fas fa-moon"></i>
-                      </button> -->
-            </div>
-    
-          </div>
-        </nav>
-      </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Franchise.html">Franchise</a></li>
+            <li class="nav-item"><a class="nav-link" href="academy.html">Academy</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Locations</a></li>
+        </ul>
+    </div>
+
+    <!-- Cart Icon -->
+    <!-- <div class="d-none d-lg-block">
+        <a href="#" class="btn btn-dark rounded-pill">
+            <i class="fas fa-shopping-cart text-white"></i>
+        </a>
+    </div> -->
+</nav>
+
     <!-- Navbar End -->
 
 
     <div class="salon-promo">
         <div class="salon-text">
             <h1 data-aos="zoom-in" data-aos-duration="3000">Beauty is an Investment, Not an Expense.</h1>
-            <p data-aos="zoom-in" data-aos-duration="3000">Experience the art of self-care with our premium salon services. From stunning hair transformations to
+            <p data-aos="zoom-in" data-aos-duration="3000">Experience the art of self-care with our premium salon
+                services. From stunning hair transformations to
                 relaxing skincare treatments, we bring your beauty dreams to life.</p>
-            <a href="#" class="salon-button" data-aos="zoom-in" data-aos-duration="3000">Book an Appointment</a>
+            <a href="appointment.html" class="salon-button" data-aos="zoom-in" data-aos-duration="3000">Book an Appointment</a>
 
 
         </div>
@@ -112,10 +133,8 @@
 
 
     <div id="app" class="wrapper first-load">
-        <div class="slide-wrapper" 
-             v-for="(slide, index) in slides" 
-             v-bind:class="{ active: index === currentSlide }"
-             v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
+        <div class="slide-wrapper" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }"
+            v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
             <div class="slide-inner">
                 <div class="slide-bg-text">
                     <p>{{ slide.headlineFirstLine }}</p>
@@ -125,24 +144,27 @@
                     <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
                 </div>
                 <div class="slide-content">
-                    <h1 class="slide-content-text"><p style="color: aliceblue;">{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a class="slide-content-cta">Book Now</a></div>
-                <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
+                    <h1 class="slide-content-text">
+                        <p style="color: aliceblue;">{{ slide.headlineFirstLine }}</p>
+                        <p>{{ slide.headlineSecondLine }}</p>
+                    </h1><a class="slide-content-cta">Book Now</a>
+                </div>
+                <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine
+                        }}</span></h2>
+            </div>
         </div>
-    <div class="controls-container">
-        <button class="controls-button" 
-                v-for="(slide, index) in slides"
-                v-bind:class="{ active: index === currentSlide }"
-                v-on:click="updateSlide(index)">{{ slide.headlineFirstLine }} {{ slide.headlineSecondLine }}</button>
+        <div class="controls-container">
+            <button class="controls-button" v-for="(slide, index) in slides"
+                v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)">{{
+                slide.headlineFirstLine }} {{ slide.headlineSecondLine }}</button>
+        </div>
+        <div class="pagination-container">
+            <span class="pagination-item" v-for="(slide, index) in slides"
+                v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)"></span>
+        </div>
     </div>
-    <div class="pagination-container">
-        <span class="pagination-item"
-              v-for="(slide, index) in slides"
-              v-bind:class="{ active: index === currentSlide }"
-              v-on:click="updateSlide(index)"></span>
-    </div>
-</div>
 
-    <div class="radiance-carousel">
+    <!-- <div class="radiance-carousel">
         <div class="radiance-slide radiance-active">
             <img class="radiance-active radiance-slide" src="/images/hair/10001.jpg" />
             <div class="radiance-overlay">
@@ -178,9 +200,9 @@
                 </div>
 
                 <div class="radiance-buttons">
-                    
+
                     <button>
-                        Explore Our Services
+                      <a href="hair-care.html">Explore Our Services</a>  
                     </button>
 
                     <div class="radiance-call-box">
@@ -205,7 +227,7 @@
                         <span>Natural Oils</span>
                         <span>Chemical-Free</span>
                         <span>Sulfate-Free</span>
-                
+
                         <span>Nourishment</span>
                         <span>Cruelty Free</span>
                         <span>Non-Greasy</span>
@@ -224,7 +246,7 @@
 
 
         </div>
-    </div> 
+    </div> -->
 
 
 
@@ -233,15 +255,20 @@
             <div class="row align-items-center">
                 <div class="col-md-4">
                     <div class="text-content mt-5">
-                        <h1 class="display-1 text-uppercase" data-aos="fade-right" data-aos-duration="1500">A Better Beauty Experience</h1>
+                        <h1 class="display-1 text-uppercase" data-aos="fade-right" data-aos-duration="1500">A Better
+                            Beauty Experience</h1>
                         <a href="about.html" class="btn btn-dark px-5 py-3">Read more</a>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <figure class="position-relative">
-                        <img src="images/banner-1.jpg" class="img-fluid" alt="photographer" data-aos="flip-left" data-aos-duration="1000">
-                        <figcaption class="bg-white p-1 m-1 p-md-5 m-md-5 col-md-5" data-aos="zoom-in" data-aos-duration="2000">
-                            "At Radiance Beauty Academy, we’re not just a unisex salon in salem, we’re a place where you can unlock your true beauty potential! Whether you’re perfecting your hair, skin, nails, or makeup, our expert training is designed to help you shine.”
+                        <img src="images/banner-1.jpg" class="img-fluid" alt="photographer" data-aos="flip-left"
+                            data-aos-duration="1000">
+                        <figcaption class="bg-white p-1 m-1 p-md-5 m-md-5 col-md-5" data-aos="zoom-in"
+                            data-aos-duration="2000">
+                            "At Radiance Beauty Academy, we’re not just a unisex salon in salem, we’re a place where you
+                            can unlock your true beauty potential! Whether you’re perfecting your hair, skin, nails, or
+                            makeup, our expert training is designed to help you shine.”
                         </figcaption>
                     </figure>
                 </div>
@@ -265,7 +292,8 @@
                 <div class="hair-text-box" data-aos="zoom-in-up" data-aos-duration="1400">
                     <h2>GENTLE & EFFECTIVE</h2>
                     <h3>Living In Harmony With Nature</h3>
-                    <p>“Our courses will boost your confidence and transform you into a beauty professional. Ready to celebrate your beauty? Come and learn from the best at the salon in Salem”</p>
+                    <p>“Our courses will boost your confidence and transform you into a beauty professional. Ready to
+                        celebrate your beauty? Come and learn from the best at the salon in Salem”</p>
                     <ul>
                         <li>Lectus sit pellentesque tincidunt</li>
                         <li>Quisque id nisi eget nulla fermentum</li>
@@ -277,11 +305,13 @@
                 <div class="hair-text-box">
                     <h2 data-aos="zoom-in" data-aos-duration="1000">ELEVATE YOUR LOOK</h2>
                     <h3 data-aos="zoom-in" data-aos-duration="1000">Flawless Style Products</h3>
-                    <p data-aos="zoom-in" data-aos-duration="1000">“Elevate your everyday look with our signature Flawless Style Product, meticulously formulated to provide long-lasting hold, natural shine, and hair protection for any style you desire.”</p>
+                    <p data-aos="zoom-in" data-aos-duration="1000">“Elevate your everyday look with our signature
+                        Flawless Style Product, meticulously formulated to provide long-lasting hold, natural shine, and
+                        hair protection for any style you desire.”</p>
                     <div class="hair-features">
 
                         <div class="svg-con">
-                            <svg class="hair-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 30" >
+                            <svg class="hair-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 30">
                                 <path
                                     d="M9.8,21c0.8,0,1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4s-1.4,0.6-1.4,1.4C8.5,20.4,9.1,21,9.8,21L9.8,21z M9.8,19.1 c0.3,0,0.6,0.3,0.6,0.6c0,0.3-0.3,0.6-0.6,0.6c-0.3,0-0.6-0.3-0.6-0.6C9.3,19.3,9.5,19.1,9.8,19.1z">
                                 </path>
@@ -374,31 +404,36 @@
             <h2>Choose Your <span>Plan</span></h2>
 
             <div class="plans-list">
-                <div class="plans-item" data-image="images/hair/10003.png" data-aos="fade-right" data-aos-duration="1000">
+                <div class="plans-item" data-image="images/hair/10003.png" data-aos="fade-right"
+                    data-aos-duration="1000">
                     <h3>Cleansing & Conditioning</h3>
                     <p>Anti-Dandruff Treatment</p>
                     <span>$50.00</span>
                 </div>
 
-                <div class="plans-item" data-image="images/hair/10004.png" data-aos="fade-right" data-aos-duration="1400">
+                <div class="plans-item" data-image="images/hair/10004.png" data-aos="fade-right"
+                    data-aos-duration="1400">
                     <h3>Treatments & Repair</h3>
                     <p>Post-Color Damage Restoration</p>
                     <span>$75.00</span>
                 </div>
 
-                <div class="plans-item" data-image="images/hair/10005.png" data-aos="fade-right" data-aos-duration="1800">
+                <div class="plans-item" data-image="images/hair/10005.png" data-aos="fade-right"
+                    data-aos-duration="1800">
                     <h3>Human Hair Wigs</h3>
                     <p>Full Lace Wigs · Hand-Tied Wigs</p>
                     <span>$25.00</span>
                 </div>
 
-                <div class="plans-item" data-image="images/hair/10006.png" data-aos="fade-right" data-aos-duration="2000">
+                <div class="plans-item" data-image="images/hair/10006.png" data-aos="fade-right"
+                    data-aos-duration="2000">
                     <h3>Growth & Strengthening</h3>
                     <p>Silk Press with Strengthening Serum </p>
                     <span>$65.00</span>
                 </div>
 
-                <div class="plans-item" data-image="images/hair/10007.png" data-aos="fade-right" data-aos-duration="2400">
+                <div class="plans-item" data-image="images/hair/10007.png" data-aos="fade-right"
+                    data-aos-duration="2400">
                     <h3>Detangling & Smoothing</h3>
                     <p>Pre-Shampoo Detangling Treatment</p>
                     <span>$45.00</span>
@@ -432,9 +467,10 @@
                             <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
                                 style="letter-spacing: 3px;">Spa & Beauty Center</h6>
                             <h3 class="display-3 text-capitalize text-white mb-3">Massage Treatment</h3>
-                            <p class="mx-md-5 px-5">"Experience pure bliss and rejuvenation with our therapeutic massage treatments, tailored to release tension and restore your body's natural balance."</p>
+                            <p class="mx-md-5 px-5">"Experience pure bliss and rejuvenation with our therapeutic massage
+                                treatments, tailored to release tension and restore your body's natural balance."</p>
                             <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
-                                href="#">Make Appointment</a>
+                                href="appointment.html">Make Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -445,9 +481,10 @@
                             <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
                                 style="letter-spacing: 3px;">Spa & Beauty Center</h6>
                             <h3 class="display-3 text-capitalize text-white mb-3">Facial Treatment</h3>
-                            <p class="mx-md-5 px-5">"Unveil your skin's natural radiance with our customized facial treatments, designed to nourish, purify, and revitalize for a glowing complexion."</p>
+                            <p class="mx-md-5 px-5">"Unveil your skin's natural radiance with our customized facial
+                                treatments, designed to nourish, purify, and revitalize for a glowing complexion."</p>
                             <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
-                                href="#">Make Appointment</a>
+                                href="appointment.html">Make Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -458,9 +495,11 @@
                             <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown"
                                 style="letter-spacing: 3px;">Spa & Beauty Center</h6>
                             <h3 class="display-3 text-capitalize text-white mb-3">Cellulite Treatment</h3>
-                            <p class="mx-md-5 px-5">"Reveal smoother, firmer skin with our advanced cellulite treatments that effectively target problem areas using cutting-edge techniques and premium products."</p>
+                            <p class="mx-md-5 px-5">"Reveal smoother, firmer skin with our advanced cellulite treatments
+                                that effectively target problem areas using cutting-edge techniques and premium
+                                products."</p>
                             <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp"
-                                href="#">Make Appointment</a>
+                                href="appointment.html">Make Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -478,16 +517,19 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class="display-1 text-uppercase">Why Choose Radiance Beauty Salon</h2>
-                    <p class="pl-4 border-left border-primary">"Discover unparalleled luxury and transformation at Radiance, your premier destination for comprehensive beauty and skincare solutions. Our expert therapists combine cutting-edge techniques with personalized care to reveal your most radiant self."</p>
+                    <p class="pl-4 border-left border-primary">"Discover unparalleled luxury and transformation at
+                        Radiance, your premier destination for comprehensive beauty and skincare solutions. Our expert
+                        therapists combine cutting-edge techniques with personalized care to reveal your most radiant
+                        self."</p>
                     <div class="row pt-3">
                         <div class="col-6">
-                            <div class="bg-light text-center p-4">
+                            <div class="box text-center p-4">
                                 <h3 class="display-4 text-primary" data-toggle="counter-up">99</h3>
                                 <h6 class="text-uppercase">Spa Specialist</h6>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="bg-light text-center p-4">
+                            <div class="box text-center p-4">
                                 <h3 class="display-4 text-primary" data-toggle="counter-up">999</h3>
                                 <h6 class="text-uppercase">Happy Clients</h6>
                             </div>
@@ -511,7 +553,9 @@
                 <img class="img-fluid" src="img/service-1.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Body Massage</h4>
-                    <p class="text-white px-3 mb-3">"Surrender to the healing touch of our skilled massage therapists as they release tension and restore harmony throughout your body. Our customized massage techniques promote circulation, relieve muscle pain, and create a profound sense of wellbeing."</p>
+                    <p class="text-white px-3 mb-3">"Surrender to the healing touch of our skilled massage therapists as
+                        they release tension and restore harmony throughout your body. Our customized massage techniques
+                        promote circulation, relieve muscle pain, and create a profound sense of wellbeing."</p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
@@ -521,7 +565,10 @@
                 <img class="img-fluid" src="img/service-2.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stone Therapy</h4>
-                    <p class="text-white px-3 mb-3">"Experience the ancient healing power of hot stone therapy, where smooth, heated basalt stones melt away stress and muscle tension. The perfect balance of heat and pressure penetrates deep into tissues, creating a state of total relaxation and renewal."</p>
+                    <p class="text-white px-3 mb-3">"Experience the ancient healing power of hot stone therapy, where
+                        smooth, heated basalt stones melt away stress and muscle tension. The perfect balance of heat
+                        and pressure penetrates deep into tissues, creating a state of total relaxation and renewal."
+                    </p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
@@ -531,7 +578,10 @@
                 <img class="img-fluid" src="img/service-3.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Facial Therapy</h4>
-                    <p class="text-white px-3 mb-3">"Indulge in our signature facial therapies that combine science-backed treatments with luxurious pampering for transformative results. Each session is tailored to your skin's needs, targeting concerns while enhancing your natural beauty for a radiant, youthful glow."</p>
+                    <p class="text-white px-3 mb-3">"Indulge in our signature facial therapies that combine
+                        science-backed treatments with luxurious pampering for transformative results. Each session is
+                        tailored to your skin's needs, targeting concerns while enhancing your natural beauty for a
+                        radiant, youthful glow."</p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
@@ -541,7 +591,10 @@
                 <img class="img-fluid" src="img/service-4.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Skin Care</h4>
-                    <p class="text-white px-3 mb-3">"Discover transformative skin care treatments that target concerns from aging and acne to hyperpigmentation and sensitivity with clinical precision. Our customized <a href="skin-care.html">skin care</a> protocols use medical-grade products and professional techniques to reveal your skin's healthiest, most radiant appearance."</p>
+                    <p class="text-white px-3 mb-3">"Discover transformative skin care treatments that target concerns
+                        from aging and acne to hyperpigmentation and sensitivity with clinical precision. Our customized
+                        <a href="skin-care.html">skin care</a> protocols use medical-grade products and professional
+                        techniques to reveal your skin's healthiest, most radiant appearance."</p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
@@ -551,7 +604,10 @@
                 <img class="img-fluid" src="img/service-5.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stream Bath</h4>
-                    <p class="text-white px-3 mb-3">"Detoxify and purify your body in our luxurious steam bath that opens pores, eliminates toxins, and stimulates circulation for total body wellness. The therapeutic steam infused with essential oils enhances respiratory health while providing deep relaxation for muscles and mind."</p>
+                    <p class="text-white px-3 mb-3">"Detoxify and purify your body in our luxurious steam bath that
+                        opens pores, eliminates toxins, and stimulates circulation for total body wellness. The
+                        therapeutic steam infused with essential oils enhances respiratory health while providing deep
+                        relaxation for muscles and mind."</p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
@@ -561,7 +617,9 @@
                 <img class="img-fluid" src="img/service-6.jpg" alt="Luxury treatments at Radiance Beauty Salon">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Face Masking</h4>
-                    <p class="text-white px-3 mb-3">"Rejuvenate and restore your complexion with our specialized face masking treatments using premium botanical ingredients. Each mask is carefully selected to address your unique skin concerns, delivering deep nourishment and visible results."</p>
+                    <p class="text-white px-3 mb-3">"Rejuvenate and restore your complexion with our specialized face
+                        masking treatments using premium botanical ingredients. Each mask is carefully selected to
+                        address your unique skin concerns, delivering deep nourishment and visible results."</p>
                     <div class="w-100 bg-white text-center p-4">
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
@@ -582,10 +640,12 @@
                         </div>
                     </div>
                     <div class="col-lg-6 pt-5 pb-lg-5">
-                        <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
+                        <div class="hours-text box p-4 p-lg-5 my-lg-5">
                             <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
                             <h1 class="mb-4">Best Relax And Spa Zone</h1>
-                            <p>“Step into our tranquil oasis where time slows down and everyday stresses dissolve into serenity. Our meticulously designed spa environment engages all your senses, creating the perfect atmosphere for profound relaxation and rejuvenation.”</p>
+                            <p>“Step into our tranquil oasis where time slows down and everyday stresses dissolve into
+                                serenity. Our meticulously designed spa environment engages all your senses, creating
+                                the perfect atmosphere for profound relaxation and rejuvenation.”</p>
                             <ul class="list-inline">
                                 <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 9:00 AM -
                                     7:00 PM</li>
@@ -593,7 +653,7 @@
                                     6:00 PM</li>
                                 <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : Closed</li>
                             </ul>
-                            <a href="" class="btn btn-primary mt-2">Book Now</a>
+                            <a href="appointment.html" class="btn btn-primary mt-2">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -638,7 +698,8 @@
                             </div>
                             <h3 class="post-title mb-2"><a href="single-blog.html">This Season’s Trending Hair
                                     Styles</a></h3>
-                            <p>From beach waves to sleek bobs, explore the hottest <a href="hair-care.html">hair</a> styling trends this season and
+                            <p>From beach waves to sleek bobs, explore the hottest <a href="hair-care.html">hair</a>
+                                styling trends this season and
                                 find the perfect look that fits your vibe.</p>
                         </div>
                     </div>
@@ -674,7 +735,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 pt-5 pb-lg-5">
-                        <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
+                        <div class="pricing-text box p-4 p-lg-5 my-lg-5">
                             <div class="owl-carousel pricing-carousel">
                                 <div class="bg-white">
                                     <div
@@ -753,7 +814,7 @@
                         <img class="img-fluid w-100" src="img/testimonial.jpg" alt="">
                     </div>
                     <div class="col-lg-6">
-                        <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">Testimonial</h6>
+                        <h6 class="d-inline-block text-primary text-uppercase box py-1 px-2">Testimonial</h6>
                         <h1 class="mb-4">What Our Clients Say!</h1>
                         <div class="owl-carousel testimonial-carousel">
                             <div class="position-relative">
@@ -809,9 +870,10 @@
         <!-- Testimonial End -->
 
 
+        <!-- Footer start -->
         <footer id="footer" class="bg-black pt-5" data-bs-theme="dark">
             <div class="container">
-                
+
 
                 <div class="row">
                     <div class="col-md-4 text-start text-md-end">
@@ -820,8 +882,8 @@
                                 <img src="images/Radiance Logo.png" class="logo footer-logo" alt="logo">
                             </a>
                         </div>
-                       
-                    
+
+
                         <div class="social-links">
                             <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3">
                                 <li>
@@ -830,7 +892,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/radiance_unisexsalon/?hl=en" class="text-secondary">
+                                    <a href="https://www.instagram.com/radiance_unisexsalon/?hl=en"
+                                        class="text-secondary">
                                         <i class="bi bi-instagram" style="font-size: 24px;"></i>
                                         <!-- New Twitter (X) logo -->
                                     </a>
@@ -841,7 +904,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/rekha-k-1868a6275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary">
+                                    <a href="https://www.linkedin.com/in/rekha-k-1868a6275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        class="text-secondary">
                                         <i class="bi bi-linkedin" style="font-size: 24px;"></i>
                                     </a>
                                 </li>
@@ -853,13 +917,7 @@
                             <h5 class="widget-title mb-4">Quick Links</h5>
                             <ul class="menu-list list-unstyled fs-6">
                                 <li class="menu-item">
-                                    <a href="index.html" class="item-anchor">Home</a>
-                                </li>
-                                <li class="menu-item">
                                     <a href="about.html" class="item-anchor">About</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="Bridal.html" class="item-anchor">Bridal</a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="franchise.html" class="item-anchor">Franchise</a>
@@ -868,7 +926,7 @@
                                     <a href="academy.html" class="item-anchor">Academy</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="contact.html" class="item-anchor">Contact</a>
+                                    <a href="contact.html" class="item-anchor">Location</a>
                                 </li>
                             </ul>
                         </div>
@@ -889,25 +947,32 @@
                                 <li class="menu-item">
                                     <a href="nail-care.html" class="item-anchor">Nail Care</a>
                                 </li>
+                                <li class="menu-item">
+                                    <a href="bridal.html" class="item-anchor">Bridal</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4 text-start text-md-end">
-                        <div class="footer-menu footer-con">
+                        <div class="footer-menu">
                             <h5 class="widget-title mb-4">Contact Us</h5>
 
-                            <p class="mb-2 branch_add d-flex"><i class="fa fa-map-marker-alt me-3 mx-2 foo-icon"></i>10/1, Vinayagar kovil street, <br /> Ashram Road, Athvaidha, <br /> Fairlands, Salem, Tamil Nadu 636016</p>
-                            <p class="mb-2 branch_add d-flex"><i class="fa fa-phone me-3 mx-2 foo-icon"></i>+91 80569 69805 <br /> +91 90958 59707</p>
-                           
+                            <p class="mb-2 branch_add d-flex"><i
+                                    class="fa fa-map-marker-alt me-3 mx-2 foo-icon"></i>10/1, Vinayagar kovil street,
+                                <br /> Ashram Road, Athvaidha, <br /> Fairlands, Salem, Tamil Nadu 636016</p>
+                            <p class="mb-2 branch_add d-flex"><i class="fa fa-phone me-3 mx-2 foo-icon"></i>+91 80569
+                                69805 <br /> +91 90958 59707</p>
+
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div class="border-top py-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>All Rights Reserved - <a href="https://nkmoderntechnology.com/" style="color: rgb(97, 171, 146);">NK Modern Technology</a>
+                            <p>All Rights Reserved - <a href="https://nkmoderntechnology.com/"
+                                    style="color: rgb(97, 171, 146);">NK Modern Technology</a>
                             </p>
                         </div>
 
@@ -923,10 +988,10 @@
         <!-- <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
         <a href="tel:8056969805" class="call-link" aria-label="Call Us">
             <img src="img/call.jpg" alt="Call" />
-          </a>
-          <a href="https://wa.me/8056969805" target="_blank" class="whatsapp-link" aria-label="Chat on WhatsApp">
+        </a>
+        <a href="https://wa.me/8056969805" target="_blank" class="whatsapp-link" aria-label="Chat on WhatsApp">
             <img src="img/whatsapp-logo-1.png" alt="WhatsApp" />
-          </a>
+        </a>
         <!-- AOS CSS -->
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <!-- AOS JS -->
@@ -1042,53 +1107,53 @@
 
 
         </script>
-      
-           
-      <script>
-        const slides1 = [
-          {
-            headlineFirstLine: "Hair Styling",
-            headlineSecondLine: "",
-            sublineFirstLine: "Nihil sub sole",
-            sublineSecondLine: "novum",
-            bgImg: "images/home/10002.jpg",
-            rectImg: ""
-          },
-          {
-            headlineFirstLine: "Hair Glossing",
-            headlineSecondLine: "",
-            sublineFirstLine: "Il n'y a rien de neuf sous",
-            sublineSecondLine: "le soleil",
-            bgImg: "images/home/10001.jpg",
-            rectImg: ""
-          },
-          {
-            headlineFirstLine: "Straightening",
-            headlineSecondLine: "",
-            sublineFirstLine: "Τίποτα καινούργιο κάτω από",
-            sublineSecondLine: "τον ήλιο",
-            bgImg: "images/home/10004.jpg",
-            rectImg: ""
-          }
-        ];
-      
-        let currentSlide1 = 0;
-        let isFirstLoad = true;
-        let isPreviousSlide = false;
-      
-        const app = document.getElementById('app');
-      
-        function render() {
-          app.className = `wrapper ${isFirstLoad ? 'first-load' : ''} ${isPreviousSlide ? 'is-previous' : ''}`;
-          app.innerHTML = ''; // Clear content
-      
-          slides1.forEach((slide, index) => {
-            const slideWrapper = document.createElement('div');
-            slideWrapper.className = `slide-wrapper${index === currentSlide1 ? ' active' : ''}`;
-            slideWrapper.style.zIndex = slides1.length - index;
-            slideWrapper.style.backgroundImage = `url(${slide.bgImg})`;
-      
-            slideWrapper.innerHTML = `
+
+
+        <script>
+            const slides1 = [
+                {
+                    headlineFirstLine: "Hair Styling",
+                    headlineSecondLine: "",
+                    sublineFirstLine: "Nihil sub sole",
+                    sublineSecondLine: "novum",
+                    bgImg: "images/home/10002.jpg",
+                    rectImg: ""
+                },
+                {
+                    headlineFirstLine: "Hair Glossing",
+                    headlineSecondLine: "",
+                    sublineFirstLine: "Il n'y a rien de neuf sous",
+                    sublineSecondLine: "le soleil",
+                    bgImg: "images/home/10001.jpg",
+                    rectImg: ""
+                },
+                {
+                    headlineFirstLine: "Straightening",
+                    headlineSecondLine: "",
+                    sublineFirstLine: "Τίποτα καινούργιο κάτω από",
+                    sublineSecondLine: "τον ήλιο",
+                    bgImg: "images/home/10004.jpg",
+                    rectImg: ""
+                }
+            ];
+
+            let currentSlide1 = 0;
+            let isFirstLoad = true;
+            let isPreviousSlide = false;
+
+            const app = document.getElementById('app');
+
+            function render() {
+                app.className = `wrapper ${isFirstLoad ? 'first-load' : ''} ${isPreviousSlide ? 'is-previous' : ''}`;
+                app.innerHTML = ''; // Clear content
+
+                slides1.forEach((slide, index) => {
+                    const slideWrapper = document.createElement('div');
+                    slideWrapper.className = `slide-wrapper${index === currentSlide1 ? ' active' : ''}`;
+                    slideWrapper.style.zIndex = slides1.length - index;
+                    slideWrapper.style.backgroundImage = `url(${slide.bgImg})`;
+
+                    slideWrapper.innerHTML = `
               <div class="slide-inner">
                 <div class="slide-bg-text">
                   <p>${slide.headlineFirstLine}</p>
@@ -1110,77 +1175,77 @@
                 </h2>
               </div>
             `;
-            app.appendChild(slideWrapper);
-          });
-      
-          // Controls
-          const controlsContainer = document.createElement('div');
-          controlsContainer.className = 'controls-container';
-      
-          slides1.forEach((slide, index) => {
-            const btn = document.createElement('button');
-            btn.className = `controls-button${index === currentSlide1 ? ' active' : ''}`;
-            btn.textContent = `${slide.headlineFirstLine} ${slide.headlineSecondLine}`;
-            btn.onclick = () => updateSlide(index);
-            controlsContainer.appendChild(btn);
-          });
-      
-          app.appendChild(controlsContainer);
-      
-          // Pagination
-          const pagination = document.createElement('div');
-          pagination.className = 'pagination-container';
-      
-          slides1.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.className = `pagination-item${index === currentSlide1 ? ' active' : ''}`;
-            dot.onclick = () => updateSlide(index);
-            pagination.appendChild(dot);
-          });
-      
-          app.appendChild(pagination);
-        }
-      
-        function updateSlide(index) {
-          isPreviousSlide = index < currentSlide1;
-          currentSlide1 = index;
-          isFirstLoad = false;
-          render();
-        }
-      
-        function setupSwipe() {
-          let startX = 0;
-          let endX = 0;
-      
-          app.addEventListener("touchstart", (e) => startX = e.touches[0].pageX);
-          app.addEventListener("touchmove", (e) => endX = e.touches[0].pageX);
-          app.addEventListener("touchend", () => {
-            const diff = startX - endX;
-            if (diff < -100 && currentSlide1 > 0) {
-              isPreviousSlide = true;
-              currentSlide1--;
-              isFirstLoad = false;
-              render();
-            } else if (diff > 100 && currentSlide1 < slides1.length - 1) {
-              isPreviousSlide = false;
-              currentSlide1++;
-              isFirstLoad = false;
-              render();
-            }
-          });
-        }
-      
-        // Initialize
-        render();
-        setupSwipe();
-      </script>
-      
+                    app.appendChild(slideWrapper);
+                });
 
-    <script src="js/active.js"></script>
-    <!-- Active JS -->
-    <script src="css/plugins.js"></script>
-    
-    <script src="js/jquery-2.2.4.min.js"></script>
+                // Controls
+                const controlsContainer = document.createElement('div');
+                controlsContainer.className = 'controls-container';
+
+                slides1.forEach((slide, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = `controls-button${index === currentSlide1 ? ' active' : ''}`;
+                    btn.textContent = `${slide.headlineFirstLine} ${slide.headlineSecondLine}`;
+                    btn.onclick = () => updateSlide(index);
+                    controlsContainer.appendChild(btn);
+                });
+
+                app.appendChild(controlsContainer);
+
+                // Pagination
+                const pagination = document.createElement('div');
+                pagination.className = 'pagination-container';
+
+                slides1.forEach((_, index) => {
+                    const dot = document.createElement('span');
+                    dot.className = `pagination-item${index === currentSlide1 ? ' active' : ''}`;
+                    dot.onclick = () => updateSlide(index);
+                    pagination.appendChild(dot);
+                });
+
+                app.appendChild(pagination);
+            }
+
+            function updateSlide(index) {
+                isPreviousSlide = index < currentSlide1;
+                currentSlide1 = index;
+                isFirstLoad = false;
+                render();
+            }
+
+            function setupSwipe() {
+                let startX = 0;
+                let endX = 0;
+
+                app.addEventListener("touchstart", (e) => startX = e.touches[0].pageX);
+                app.addEventListener("touchmove", (e) => endX = e.touches[0].pageX);
+                app.addEventListener("touchend", () => {
+                    const diff = startX - endX;
+                    if (diff < -100 && currentSlide1 > 0) {
+                        isPreviousSlide = true;
+                        currentSlide1--;
+                        isFirstLoad = false;
+                        render();
+                    } else if (diff > 100 && currentSlide1 < slides1.length - 1) {
+                        isPreviousSlide = false;
+                        currentSlide1++;
+                        isFirstLoad = false;
+                        render();
+                    }
+                });
+            }
+
+            // Initialize
+            render();
+            setupSwipe();
+        </script>
+
+
+        <script src="js/active.js"></script>
+        <!-- Active JS -->
+        <script src="css/plugins.js"></script>
+
+        <script src="js/jquery-2.2.4.min.js"></script>
 
 </body>
 

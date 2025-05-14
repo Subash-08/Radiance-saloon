@@ -1,3 +1,9 @@
+p{
+  font-weight: 800px;
+  color: black;
+}
+
+
 /* Preloader */
 #preloader {
   position: fixed;
@@ -49,28 +55,49 @@
   visibility: hidden;
   transition: opacity 0.8s ease, visibility 0.8s ease;
 }
-
-/* Hide navbar initially */
-#navbar.hidden {
-  display: none;
-}
-/* Hide navbar initially */
-.nav-bar-div.hidden {
-  display: none;
-}
-/* Hide nav-bar-div immediately */
-.nav-bar-div {
-  display: none;
+.top-bar {
+    background-color: #0e0e0e;
+    font-size: 14px;
 }
 
-/* When preloader is done, show navbar */
-.nav-bar-div.show {
-  display: block;
+.top-bar .btn-warning {
+    background-color: #5e7445;
+    border: none;
 }
 
+.social-icons a {
+    font-size: 18px;
+}
 
-.nav-logo{
-    width: 180px;
+.nav-logo {
+    width: 190px;
+    /* margin-left: 150px; */
+}
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.btn-dark i {
+    font-size: 18px;
+}
+.tob_bar{
+  width: 70%;
+  margin: auto;
+  max-width: 1500px;
+}
+.navbar {
+    border-bottom: 2px solid #e0e0e0; /* Light grey border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+    margin: auto;
+    max-width: 1500px;
+    
+}
+@media (max-width: 800px) {
+  .top-bar{
+    display: none;
+  }
+
 }
 
 .btn-book-now {
@@ -311,6 +338,7 @@
   .radiance-call-info p {
     font-size: 10px;
   }
+ 
 }
 
 @media (max-width: 768px) {
@@ -1430,7 +1458,7 @@ button svg {
   margin: auto;
   padding: 50px 20px; /* Add some side padding for small screens */
   height: auto;
-  margin-top: 84px;
+  /* margin-top: 84px; */
   gap: 40px;
   flex-wrap: wrap; /* Allow wrapping on small screens */
 }
