@@ -72,6 +72,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light px-lg-5">
     <!-- Logo -->
+    
+    
     <a href="index.html" class="navbar-brand">
         <img class="nav-logo" src="images/Radiance Logo.png" alt="Logo">
     </a>
@@ -408,35 +410,35 @@
                     data-aos-duration="1000">
                     <h3>Cleansing & Conditioning</h3>
                     <p>Anti-Dandruff Treatment</p>
-                    <span>$50.00</span>
+                    
                 </div>
 
                 <div class="plans-item" data-image="images/hair/10004.png" data-aos="fade-right"
                     data-aos-duration="1400">
                     <h3>Treatments & Repair</h3>
                     <p>Post-Color Damage Restoration</p>
-                    <span>$75.00</span>
+                   
                 </div>
 
                 <div class="plans-item" data-image="images/hair/10005.png" data-aos="fade-right"
                     data-aos-duration="1800">
                     <h3>Human Hair Wigs</h3>
                     <p>Full Lace Wigs · Hand-Tied Wigs</p>
-                    <span>$25.00</span>
+                    
                 </div>
 
                 <div class="plans-item" data-image="images/hair/10006.png" data-aos="fade-right"
                     data-aos-duration="2000">
                     <h3>Growth & Strengthening</h3>
                     <p>Silk Press with Strengthening Serum </p>
-                    <span>$65.00</span>
+                   
                 </div>
 
                 <div class="plans-item" data-image="images/hair/10007.png" data-aos="fade-right"
                     data-aos-duration="2400">
                     <h3>Detangling & Smoothing</h3>
                     <p>Pre-Shampoo Detangling Treatment</p>
-                    <span>$45.00</span>
+                    
                 </div>
             </div>
         </div>
@@ -647,12 +649,9 @@
                                 serenity. Our meticulously designed spa environment engages all your senses, creating
                                 the perfect atmosphere for profound relaxation and rejuvenation.”</p>
                             <ul class="list-inline">
-                                <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 9:00 AM -
-                                    7:00 PM</li>
-                                <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 9:00 AM -
-                                    6:00 PM</li>
-                                <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : Closed</li>
-                            </ul>
+                                <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Monday – Sunday : 9:00 AM -
+                                    9:00 PM</li>
+                                </ul>
                             <a href="appointment.html" class="btn btn-primary mt-2">Book Now</a>
                         </div>
                     </div>
@@ -726,7 +725,7 @@
         </section>
 
         <!-- Pricing Start -->
-        <div class="container-fluid bg-pricing" style="margin: 90px 0;">
+        <!-- <div class="container-fluid bg-pricing" style="margin: 90px 0;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5" style="min-height: 500px;">
@@ -802,7 +801,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Pricing End -->
 
 
@@ -1088,21 +1087,21 @@
             // Show the first slide initially
             showSlide(currentSlide);
 
-            // Select all the plan items
-            const planItems = document.querySelectorAll('.plans-item');
-            const plansImage = document.getElementById('plans-image');
+          document.addEventListener('DOMContentLoaded', function () {
+  const planItems = document.querySelectorAll('.plans-item');
+  const plansImage = document.getElementById('plans-image');
 
-            // Add event listener for mouseover and mouseout to change the image
-            planItems.forEach(item => {
-                item.addEventListener('mouseover', function () {
-                    const newImage = item.getAttribute('data-image');
-                    plansImage.src = newImage; // Change the image source when hovered
-                });
+  planItems.forEach(item => {
+    item.addEventListener('mouseover', function () {
+      const newImage = item.getAttribute('data-image');
+      plansImage.src = newImage;
+    });
 
-                item.addEventListener('mouseout', function () {
-                    plansImage.src = 'images/hair/10003.png'; // Reset to default image
-                });
-            });
+    item.addEventListener('mouseout', function () {
+      plansImage.src = 'images/hair/10003.png';
+    });
+  });
+});
 
 
 
@@ -1114,24 +1113,24 @@
                 {
                     headlineFirstLine: "Hair Styling",
                     headlineSecondLine: "",
-                    sublineFirstLine: "Nihil sub sole",
-                    sublineSecondLine: "novum",
+                    sublineFirstLine: "",
+                    sublineSecondLine: "",
                     bgImg: "images/home/10002.jpg",
                     rectImg: ""
                 },
                 {
                     headlineFirstLine: "Hair Glossing",
                     headlineSecondLine: "",
-                    sublineFirstLine: "Il n'y a rien de neuf sous",
-                    sublineSecondLine: "le soleil",
+                    sublineFirstLine: "",
+                    sublineSecondLine: "",
                     bgImg: "images/home/10001.jpg",
                     rectImg: ""
                 },
                 {
                     headlineFirstLine: "Straightening",
                     headlineSecondLine: "",
-                    sublineFirstLine: "Τίποτα καινούργιο κάτω από",
-                    sublineSecondLine: "τον ήλιο",
+                    sublineFirstLine: "",
+                    sublineSecondLine: "",
                     bgImg: "images/home/10004.jpg",
                     rectImg: ""
                 }

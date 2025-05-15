@@ -88,6 +88,14 @@
     background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/home/10002.jpg), no-repeat center center;
     background-size: cover;
   }
+   .bg-jumbotron-skin {
+    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/skin/10002.jpeg), no-repeat center center;
+    background-size: cover;
+  }
+    .bg-jumbotron-bridal {
+    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../images/bridal_service/10001.jpeg), no-repeat center center;
+    background-size: cover;
+  }
   .toggle-container {
     max-width: 1200px;
     margin: 0 auto;

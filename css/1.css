@@ -64,7 +64,9 @@ p{
     background-color: #5e7445;
     border: none;
 }
-
+.top-bar i:hover{
+  color: white;
+}
 .social-icons a {
     font-size: 18px;
 }
@@ -90,7 +92,6 @@ p{
     border-bottom: 2px solid #e0e0e0; /* Light grey border */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
     margin: auto;
-    max-width: 1500px;
     
 }
 @media (max-width: 800px) {
@@ -108,6 +109,10 @@ p{
   font-weight: 600;
   transition: 0.3s ease-in-out;
   border: 2px solid transparent;
+}
+.navbar-content{
+  
+    max-width: 1500px;
 }
 
 .btn-book-now:hover {
