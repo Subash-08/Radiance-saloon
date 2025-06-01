@@ -2361,14 +2361,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #5e7445;
-  background-color: #54936d;
-  border-color: #A8D5BA;
+  background-color: #6f7b63;
+  border-color: #6b7462;
 }
 
 .btn-primary:hover {
   color: #5e7445;
-  background-color: #f7846e;
-  border-color: #f67a62;
+  background-color: #6f7b63;
+  border-color: #444843;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -9566,8 +9566,9 @@ h6,
 }
 
 .bg-appointment {
-  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/carousel-1.jpg), no-repeat center center;
-  background-size: cover;
+  background-color: #6f7b63;
+  /* background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)), url(../img/carousel-1.jpg), no-repeat center center;
+  background-size: cover; */
 }
 
 .bg-pricing {

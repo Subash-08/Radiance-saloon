@@ -706,7 +706,7 @@ p{
 
 .plans-left h2 span {
   font-style: italic;
-  color: #8bdb72;
+  color: #6f7b63;
 }
 
 .plans-list {
@@ -727,7 +727,7 @@ p{
 }
 
 .plans-item:hover {
-  background: #67ca67;
+  background: #6f7b63;
   color: white;
 }
 
@@ -1488,7 +1488,7 @@ button svg {
 .salon-button {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #5abc81;
+  background-color: #6f7b63;
   color: white;
   text-decoration: none;
   font-weight: bold;
